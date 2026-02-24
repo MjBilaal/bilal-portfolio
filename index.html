@@ -711,11 +711,17 @@
             border-bottom-color: rgba(255, 255, 255, 0.3);
             font-size: 15px;
             padding: 10px 4px;
+            text-transform: none !important;
         }
 
         .contact-area .form input:focus,
         .contact-area .form textarea:focus {
             border-bottom-color: var(--accent-primary);
+        }
+
+        .contact-area .form input::placeholder,
+        .contact-area .form textarea::placeholder {
+            text-transform: none;
         }
 
         #contact-form .button {
@@ -823,7 +829,7 @@
                 animation: none;
             }
 
-            .navbar-collapse {
+            .navbar-b.navbar-trans .navbar-collapse {
                 margin-top: 14px;
                 padding: 14px;
                 border: 1px solid rgba(255, 255, 255, 0.12);
@@ -831,9 +837,25 @@
                 background: rgba(8, 11, 18, 0.96);
             }
 
+            .navbar-b.navbar-reduce .navbar-collapse {
+                margin-top: 14px;
+                padding: 14px;
+                border: 1px solid rgba(17, 17, 17, 0.12);
+                border-radius: 14px;
+                background: rgba(255, 255, 255, 0.96);
+            }
+
             body.light-mode .navbar-collapse {
                 background: rgba(255, 255, 255, 0.96);
                 border-color: rgba(17, 17, 17, 0.12);
+            }
+
+            .navbar-b.navbar-trans .nav-link {
+                color: #ffffff;
+            }
+
+            .navbar-b.navbar-reduce .nav-link {
+                color: #111111;
             }
 
             .navbar-b .nav-link {
@@ -963,9 +985,6 @@
                     </a>
                     <a href="https://github.com/MjBilaal" target="_blank">
                         <i class="fa fa-github"></i>  
-                    </a>
-                    <a href="https://www.instagram.com/bilal_mdj/" target="_blank">
-                        <i class="fa fa-instagram"></i>  
                     </a>
                 </div>
                 
