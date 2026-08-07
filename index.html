@@ -579,6 +579,18 @@
             transform: translateY(-2px);
         }
 
+        /* Le thème définit « a:hover, a:focus { color: #ea1538 } », plus spécifique
+           que « .button ». Résultat : texte rouge sur fond rouge, donc invisible,
+           et le focus reste collé après un tap sur mobile. On force la couleur. */
+        a.button,
+        a.button:link,
+        a.button:visited,
+        a.button:hover,
+        a.button:focus,
+        a.button:active {
+            color: #ffffff;
+        }
+
         .button-ghost {
             background: transparent;
             border-color: rgba(255, 255, 255, 0.72);
@@ -586,10 +598,55 @@
             box-shadow: none;
         }
 
+        a.button-ghost:hover,
+        a.button-ghost:focus,
+        a.button-ghost:active {
+            background: #ffffff;
+            color: #111111;
+            border-color: #ffffff;
+        }
+
         .button-ghost:hover {
             background: #ffffff;
             color: #111111;
             border-color: #ffffff;
+        }
+
+        /* Sur écran tactile, le survol reste « collé » après un appui : on le neutralise
+           pour qu'un bouton ne garde pas son état actif une fois relâché. */
+        @media (hover: none) {
+
+            .button:hover,
+            a.button:hover,
+            a.button:focus {
+                background: #ea1538;
+                border-color: #ea1538;
+                color: #ffffff;
+                transform: none;
+            }
+
+            .button-ghost:hover,
+            a.button-ghost:hover,
+            a.button-ghost:focus {
+                background: transparent;
+                border-color: rgba(255, 255, 255, 0.72);
+                color: #ffffff;
+            }
+
+            body.light-mode .button-ghost:hover,
+            body.light-mode a.button-ghost:hover,
+            body.light-mode a.button-ghost:focus {
+                border-color: rgba(15, 23, 42, 0.4);
+                color: #111111;
+            }
+
+            .button-cyber:hover,
+            .project-card:hover,
+            .skill-card:hover,
+            .single-services-box:hover,
+            .hero-stack li:hover {
+                transform: none;
+            }
         }
 
         .about-area img {
@@ -986,6 +1043,30 @@
             background-image: -webkit-image-set(url(assets/img/home-bg.webp) 1x);
             background-image: image-set(url(assets/img/home-bg.webp) type("image/webp"),
                     url(assets/img/home-bg.jpg) type("image/jpeg"));
+        }
+
+        /* --- Préchargeur : le thème s'appuie uniquement sur deux pseudo-éléments
+               de 50 % qui s'écartent. Sur mobile, 100vh vaut la hauteur SANS la barre
+               d'adresse, donc les rideaux ne couvraient pas tout l'écran et la page
+               apparaissait entre les deux. On donne un fond au conteneur et on
+               utilise 100dvh (hauteur réelle, barre d'adresse comprise). --- */
+
+        #preloader-wapper {
+            height: 100vh;
+            height: 100dvh;
+            min-height: -webkit-fill-available;
+            background: rgb(9, 7, 12);
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+
+        #preloader-wapper.loaded {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #preloader-wapper::before,
+        #preloader-wapper::after {
+            height: 51%;
         }
 
         /* --- Accessibilité : lien d'évitement & focus visible --- */

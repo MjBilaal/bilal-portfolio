@@ -1134,12 +1134,39 @@
             position: fixed;
             inset: 0;
             z-index: 80;
+            /* 100dvh suit la hauteur réelle du navigateur mobile (barre d'adresse comprise),
+               contrairement à 100vh qui laisse une bande de page visible en dessous. */
+            height: 100vh;
+            height: 100dvh;
+            width: 100%;
             background: #04070f;
             color: #38e992;
             display: grid;
             place-items: center;
             padding: 20px;
+            overflow-y: auto;
+            overscroll-behavior: contain;
             transition: opacity .5s ease, visibility .5s ease;
+        }
+
+        .trap {
+            height: 100vh;
+            height: 100dvh;
+        }
+
+        /* Sur écran tactile, le survol reste collé après un appui. */
+        @media (hover: none) {
+
+            .btn:hover,
+            .chip:hover,
+            .mode-toggle:hover,
+            .project-card-cv:hover,
+            .game__choice:hover:not([disabled]),
+            .game__teaser:hover,
+            .reveal-panel__btn:hover,
+            .trap__cta:hover {
+                transform: none;
+            }
         }
 
         .boot-screen.is-hidden {
