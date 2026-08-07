@@ -39,13 +39,30 @@
 			itemSelector: '.project-grid-item'
 		});
 
-		$('#project-flters li').on('click', function () {
-			$("#project-flters li").removeClass('filter-active');
-			$(this).addClass('filter-active');
+		function applyProjectFilter($el) {
+			$("#project-flters li").removeClass('filter-active').attr('aria-pressed', 'false');
+			$el.addClass('filter-active').attr('aria-pressed', 'true');
 
 			projectIsotope.isotope({
-				filter: $(this).data('filter')
+				filter: $el.data('filter')
 			});
+		}
+
+		$('#project-flters li').on('click', function () {
+			applyProjectFilter($(this));
+		});
+
+		// Accessibilité clavier : Entrée ou Espace active le filtre
+		$('#project-flters li').on('keydown', function (e) {
+			if (e.key === 'Enter' || e.key === ' ' || e.keyCode === 13 || e.keyCode === 32) {
+				e.preventDefault();
+				applyProjectFilter($(this));
+			}
+		});
+
+		// Recalcule la mise en page une fois les images chargées (évite les chevauchements)
+		$('.project-container img').on('load', function () {
+			projectIsotope.isotope('layout');
 		});
     });
 	
@@ -118,10 +135,25 @@
     // HOME TYPED JS
     if ($('.element').length) {
         $('.element').each(function () {
-            $(this).typed({
-                strings: [$(this).data('text1'), $(this).data('text2'), $(this).data('text3')], 
-                loop: $(this).data('loop') ? $(this).data('loop') : false ,
-                backDelay: $(this).data('backdelay') ? $(this).data('backdelay') : 2000 ,                
+            var $el = $(this);
+            var strings = [];
+            // Accepte un nombre variable de phrases (data-text1 … data-text6)
+            for (var i = 1; i <= 6; i++) {
+                var value = $el.data('text' + i);
+                if (value) { strings.push(value); }
+            }
+            if (!strings.length) { return; }
+
+            // Respecte la préférence système « réduire les animations »
+            if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                $el.text(strings[0]);
+                return;
+            }
+
+            $el.typed({
+                strings: strings,
+                loop: $el.data('loop') ? $el.data('loop') : false,
+                backDelay: $el.data('backdelay') ? $el.data('backdelay') : 2000,
                 typeSpeed: 10,
             });
         });

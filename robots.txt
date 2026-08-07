@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Ressources internes inutiles à l'indexation
+Disallow: /assets/js/
+Disallow: /assets/fonts/
+
+Sitemap: https://bilalmedj.com/sitemap.xml

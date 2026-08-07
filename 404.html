@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page introuvable (404) — MEDJ Bilal</title>
+    <meta name="description" content="Cette page n'existe pas ou a été déplacée. Retournez à l'accueil du portfolio de MEDJ Bilal.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#0b1220">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="assets/img/meta/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            font-family: "Montserrat", system-ui, sans-serif;
+            color: #e6edf7;
+            background:
+                radial-gradient(1000px 600px at 15% -10%, rgba(34, 197, 94, 0.10), transparent 60%),
+                radial-gradient(900px 500px at 100% 0%, rgba(234, 21, 56, 0.08), transparent 55%),
+                #0b1220;
+        }
+
+        .wrap {
+            width: 100%;
+            max-width: 620px;
+            text-align: center;
+        }
+
+        .terminal {
+            padding: 34px 30px;
+            text-align: left;
+            border: 1px solid rgba(34, 197, 94, 0.28);
+            border-radius: 14px;
+            background: rgba(10, 16, 28, 0.72);
+            box-shadow: 0 26px 60px rgba(0, 0, 0, 0.45);
+        }
+
+        .terminal__bar {
+            display: flex;
+            gap: 7px;
+            margin-bottom: 22px;
+        }
+
+        .terminal__bar span {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .terminal__bar span:first-child { background: #ea1538; }
+        .terminal__bar span:nth-child(2) { background: #f0b429; }
+        .terminal__bar span:nth-child(3) { background: #22c55e; }
+
+        code, .mono {
+            font-family: "Fira Code", ui-monospace, monospace;
+        }
+
+        .line {
+            margin: 0 0 8px;
+            font-size: 13.5px;
+            color: #8fa3bf;
+        }
+
+        .line .prompt { color: #22c55e; }
+        .line .err { color: #ff6b81; }
+
+        h1 {
+            margin: 26px 0 10px;
+            font-size: clamp(60px, 16vw, 92px);
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.03em;
+            color: #22c55e;
+        }
+
+        h2 {
+            margin: 0 0 14px;
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        p.lead {
+            margin: 0 0 28px;
+            font-size: 15px;
+            line-height: 1.75;
+            color: #a8b8ce;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+        }
+
+        .btn--primary {
+            background: #22c55e;
+            color: #06110a;
+            border: 2px solid #22c55e;
+        }
+
+        .btn--ghost {
+            background: transparent;
+            color: #22c55e;
+            border: 2px solid rgba(34, 197, 94, 0.5);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 26px rgba(34, 197, 94, 0.24);
+        }
+
+        .btn--ghost:hover {
+            background: rgba(34, 197, 94, 0.1);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 15px;
+            vertical-align: -2px;
+            background: #22c55e;
+            animation: blink 1.05s steps(2, start) infinite;
+        }
+
+        @keyframes blink { to { visibility: hidden; } }
+
+        @media (prefers-reduced-motion: reduce) {
+            .cursor { animation: none; }
+            .btn:hover { transform: none; }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap">
+        <div class="terminal">
+            <div class="terminal__bar" aria-hidden="true"><span></span><span></span><span></span></div>
+
+            <p class="line mono"><span class="prompt">root@bilalmedj:~#</span> locate page_demandee</p>
+            <p class="line mono"><span class="err">error 404:</span> aucune correspondance trouvée</p>
+            <p class="line mono"><span class="prompt">root@bilalmedj:~#</span> <span class="cursor" aria-hidden="true"></span></p>
+
+            <h1>404</h1>
+            <h2>Cette page n'existe pas</h2>
+            <p class="lead">
+                Le lien est peut-être erroné, ou la page a été déplacée. Rien de grave —
+                voici par où repartir.
+            </p>
+
+            <div class="actions">
+                <a class="btn btn--primary" href="/">Retour à l'accueil</a>
+                <a class="btn btn--ghost" href="/cv-interactif.html">CV interactif ⚡</a>
+                <a class="btn btn--ghost" href="/#contact">Me contacter</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

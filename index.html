@@ -1,15 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- ===== SEO ===== -->
+    <title>MEDJ Bilal — Master Cybersécurité &amp; Développeur Web | Portfolio</title>
+    <meta name="description" content="Portfolio de MEDJ Bilal, étudiant en Master 2 Cybersécurité à l'UPHF et développeur web full-stack à Douai. Projets, compétences techniques, CV interactif et contact.">
+    <meta name="keywords" content="MEDJ Bilal, cybersécurité, développeur web, alternance cybersécurité, stage informatique, Douai, UPHF, portfolio, full-stack, Linux, Java, Python">
+    <meta name="author" content="MEDJ Bilal">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#0b1220">
+    <link rel="canonical" href="https://bilalmedj.com/">
+
+    <!-- ===== Favicon &amp; icônes ===== -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/meta/icon-192.png">
+    <link rel="apple-touch-icon" href="assets/img/meta/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- ===== Open Graph / réseaux sociaux ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="MEDJ Bilal — Portfolio">
+    <meta property="og:title" content="MEDJ Bilal — Master Cybersécurité &amp; Développeur Web">
+    <meta property="og:description" content="Étudiant en Master 2 Cybersécurité à l'UPHF, développeur web full-stack. Découvrez mes projets, mon CV interactif et mes compétences.">
+    <meta property="og:url" content="https://bilalmedj.com/">
+    <meta property="og:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MEDJ Bilal — Master Cybersécurité et développeur web">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MEDJ Bilal — Master Cybersécurité &amp; Développeur Web">
+    <meta name="twitter:description" content="Étudiant en Master 2 Cybersécurité à l'UPHF, développeur web full-stack. Projets, CV interactif et contact.">
+    <meta name="twitter:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
+
+    <!-- ===== Performance : préconnexion &amp; préchargement ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="assets/img/home-bg.webp" type="image/webp" fetchpriority="high">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Site Main Style sheet css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- ===== Données structurées (schema.org) ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "MEDJ Bilal",
+      "givenName": "Bilal",
+      "familyName": "MEDJ",
+      "jobTitle": "Étudiant en Master 2 Cybersécurité — Développeur web",
+      "description": "Étudiant en Master 2 Cybersécurité à l'UPHF et développeur web full-stack, à la recherche d'une alternance ou d'un stage.",
+      "url": "https://bilalmedj.com/",
+      "image": "https://bilalmedj.com/assets/img/pdp.jpg",
+      "email": "mailto:bilal.medj@hotmail.fr",
+      "telephone": "+33603665993",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Douai",
+        "addressRegion": "Hauts-de-France",
+        "addressCountry": "FR"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Université Polytechnique Hauts-de-France (UPHF)" }
+      ],
+      "knowsAbout": ["Cybersécurité", "Linux", "Réseaux TCP/IP", "OWASP", "Développement web", "JavaScript", "Java", "Python", "PHP", "SQL"],
+      "sameAs": [
+        "https://www.linkedin.com/in/bilal-medj-0960282a4/",
+        "https://github.com/MjBilaal"
+      ]
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) — chargé après le rendu pour ne pas bloquer l'affichage -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYF9WP24S"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-XHYF9WP24S');
     </script>
 
@@ -23,19 +99,6 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-W2TB8TFG');</script>
     <!-- End Google Tag Manager -->
-
-
-    <meta charset="utf-8">
-    <title> Portfolio </title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="keywords" content="onepage, html5 template, portfolio template">
-    <meta name="description" content="Maslin - Personal Portfolio HTML Template, one page template">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Site Main Style sheet css -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
 
     <style>
         /* Styles spécifiques pour les boutons Cyber sans casser le reste */
@@ -912,6 +975,691 @@
                 transition: none !important;
             }
         }
+
+        /* =========================================================
+           NOUVEAUX COMPOSANTS
+           ========================================================= */
+
+        /* --- Performance : image d'accueil en WebP quand le navigateur le gère --- */
+        .home-area {
+            background-image: url(assets/img/home-bg.jpg);
+            background-image: -webkit-image-set(url(assets/img/home-bg.webp) 1x);
+            background-image: image-set(url(assets/img/home-bg.webp) type("image/webp"),
+                    url(assets/img/home-bg.jpg) type("image/jpeg"));
+        }
+
+        /* --- Accessibilité : lien d'évitement & focus visible --- */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 16px;
+            z-index: 9999;
+            padding: 12px 22px;
+            background: #22c55e;
+            color: #06110a;
+            font-weight: 700;
+            border-radius: 0 0 8px 8px;
+            text-decoration: none;
+            transition: top 0.25s ease;
+        }
+
+        .skip-link:focus {
+            top: 0;
+            color: #06110a;
+        }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible,
+        .filter:focus-visible {
+            outline: 3px solid #22c55e;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        /* --- Sous-titres de section --- */
+        .section-subtitle {
+            max-width: 680px;
+            margin: 18px auto 0;
+            font-size: 15px;
+            line-height: 1.75;
+            opacity: 0.82;
+            text-align: center;
+        }
+
+        /* --- Accueil : badge de disponibilité --- */
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-bottom: 22px !important;
+            padding: 7px 18px;
+            font-size: 12.5px !important;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #22c55e !important;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.42);
+            border-radius: 999px;
+        }
+
+        .hero-badge__dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+            box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.65);
+            animation: hero-pulse 2.2s infinite;
+        }
+
+        @keyframes hero-pulse {
+            70% { box-shadow: 0 0 0 11px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        .hero-role {
+            font-size: 17px !important;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            opacity: 0.92;
+            margin-bottom: 10px !important;
+        }
+
+        .hero-pitch {
+            max-width: 720px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            font-size: 15.5px !important;
+        }
+
+        .hero-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 9px;
+            list-style: none;
+            padding: 0;
+            margin: 26px 0 6px;
+        }
+
+        .hero-stack li {
+            padding: 6px 15px;
+            font-size: 12.5px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: border-color 0.25s ease, transform 0.25s ease;
+        }
+
+        .hero-stack li:hover {
+            border-color: rgba(34, 197, 94, 0.6);
+            transform: translateY(-2px);
+        }
+
+        body.light-mode .hero-stack li {
+            border-color: rgba(15, 23, 42, 0.16);
+            background: rgba(15, 23, 42, 0.04);
+        }
+
+        .home-area .social a.text,
+        .home-area .social .text {
+            cursor: default;
+        }
+
+        /* --- À propos : informations pratiques --- */
+        .about-facts {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px;
+        }
+
+        .about-facts li {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 12px 16px;
+            border-left: 2px solid rgba(34, 197, 94, 0.55);
+            background: rgba(255, 255, 255, 0.035);
+            border-radius: 0 8px 8px 0;
+        }
+
+        body.light-mode .about-facts li {
+            background: rgba(15, 23, 42, 0.035);
+        }
+
+        .about-facts__label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            opacity: 0.62;
+        }
+
+        .about-facts__value {
+            font-size: 14.5px;
+            font-weight: 600;
+        }
+
+        .about-area .contact-info a {
+            text-decoration: none;
+            border-bottom: 1px solid rgba(34, 197, 94, 0.4);
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .about-area .contact-info a:hover {
+            color: #22c55e;
+            border-color: #22c55e;
+        }
+
+        /* --- Compétences : cartes par domaine --- */
+        .skills-grid {
+            margin-top: 10px;
+        }
+
+        .skill-box {
+            margin-bottom: 26px;
+        }
+
+        .skill-card {
+            height: 100%;
+            padding: 26px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.032);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(34, 197, 94, 0.42);
+            box-shadow: 0 18px 38px rgba(0, 0, 0, 0.28);
+        }
+
+        .skill-card--accent {
+            border-color: rgba(34, 197, 94, 0.34);
+            background: rgba(34, 197, 94, 0.06);
+        }
+
+        body.light-mode .skill-card {
+            border-color: rgba(15, 23, 42, 0.1);
+            background: #ffffff;
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+        }
+
+        body.light-mode .skill-card:hover {
+            box-shadow: 0 16px 32px rgba(15, 23, 42, 0.1);
+        }
+
+        .skill-card__title {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin: 0 0 18px;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .skill-card__icon {
+            font-size: 15px;
+            color: #22c55e;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tech-list li {
+            padding: 5px 13px;
+            font-size: 12.5px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        body.light-mode .tech-list li {
+            border-color: rgba(15, 23, 42, 0.12);
+            background: rgba(15, 23, 42, 0.04);
+        }
+
+        /* --- Projets : cartes détaillées --- */
+        .project-container {
+            margin-top: 12px;
+        }
+
+        .project-area .project-grid-item {
+            margin-bottom: 30px;
+            /* le template masquait le débordement, ce qui coupait l'effet de survol */
+            overflow: visible;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.03);
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(34, 197, 94, 0.4);
+            box-shadow: 0 22px 46px rgba(0, 0, 0, 0.34);
+        }
+
+        body.light-mode .project-card {
+            border-color: rgba(15, 23, 42, 0.1);
+            background: #ffffff;
+            box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+        }
+
+        body.light-mode .project-card:hover {
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+        }
+
+        .project-card .project-item {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0;
+        }
+
+        .project-card .project-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-card .project-img-overlay .project-content h6 {
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .project-card__body {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 24px 24px 22px;
+        }
+
+        .project-card__title {
+            margin: 0 0 12px;
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+        .project-card__desc {
+            flex: 1;
+            margin: 0 0 18px;
+            font-size: 14.5px;
+            line-height: 1.72;
+            opacity: 0.86;
+        }
+
+        .project-card__tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 18px;
+        }
+
+        .project-card__tags li {
+            padding: 4px 11px;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: #22c55e;
+            border: 1px solid rgba(34, 197, 94, 0.34);
+            border-radius: 5px;
+            background: rgba(34, 197, 94, 0.08);
+        }
+
+        .project-card__links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13.5px;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color 0.22s ease, border-color 0.22s ease;
+        }
+
+        .project-link:hover {
+            color: #22c55e;
+            border-color: #22c55e;
+        }
+
+        .project-more {
+            margin-top: 10px;
+            font-size: 15px;
+            opacity: 0.85;
+        }
+
+        .project-more a {
+            font-weight: 700;
+            color: #22c55e;
+            border-bottom: 1px solid rgba(34, 197, 94, 0.45);
+            text-decoration: none;
+        }
+
+        #project .project-list .nav li {
+            cursor: pointer;
+        }
+
+        /* --- Parcours : chronologie --- */
+        .experience-area {
+            background: rgba(255, 255, 255, 0.018);
+        }
+
+        body.light-mode .experience-area {
+            background: #edf2f7;
+        }
+
+        .timeline-heading {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            margin-bottom: 28px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .timeline-heading i {
+            color: #22c55e;
+        }
+
+        .timeline {
+            position: relative;
+            list-style: none;
+            margin: 0 0 34px;
+            padding: 0 0 0 30px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            bottom: 6px;
+            left: 6px;
+            width: 2px;
+            background: linear-gradient(180deg, rgba(34, 197, 94, 0.6), rgba(34, 197, 94, 0.08));
+        }
+
+        .timeline__item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 4px;
+        }
+
+        .timeline__item::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: -30px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #0f172a;
+            border: 2px solid rgba(34, 197, 94, 0.55);
+        }
+
+        body.light-mode .timeline__item::before {
+            background: #ffffff;
+        }
+
+        .timeline__item--current::before {
+            background: #22c55e;
+            border-color: #22c55e;
+            box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.16);
+        }
+
+        .timeline__period {
+            display: inline-block;
+            margin-bottom: 7px;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #22c55e;
+        }
+
+        .timeline__title {
+            margin: 0 0 4px;
+            font-size: 16.5px;
+            font-weight: 700;
+        }
+
+        .timeline__org {
+            margin: 0 0 9px !important;
+            font-size: 13.5px !important;
+            font-weight: 600;
+            opacity: 0.72;
+        }
+
+        .timeline__desc {
+            margin: 0 0 11px !important;
+            font-size: 14px !important;
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+
+        .timeline__tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .timeline__tags li {
+            padding: 3px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+
+        body.light-mode .timeline__tags li {
+            border-color: rgba(15, 23, 42, 0.14);
+        }
+
+        /* --- Formulaire de contact --- */
+        .contact-area .form label {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            opacity: 0.72;
+        }
+
+        .contact-area .form label span {
+            color: #ea1538;
+        }
+
+        .form-honeypot {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .form-message {
+            min-height: 1px;
+            margin-bottom: 14px;
+            font-size: 14.5px;
+            font-weight: 600;
+        }
+
+        .form-message--success {
+            color: #22c55e;
+        }
+
+        .form-message--error {
+            color: #ff6b81;
+        }
+
+        .form-note {
+            margin-top: 16px;
+            font-size: 12.5px !important;
+            line-height: 1.6;
+            opacity: 0.6;
+        }
+
+        #form-submit[disabled] {
+            opacity: 0.62;
+            cursor: not-allowed;
+        }
+
+        .contact-details a {
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-details a:hover {
+            color: #22c55e;
+        }
+
+        /* --- Pied de page enrichi --- */
+        .footer-top {
+            padding: 52px 0 34px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            text-align: left;
+        }
+
+        body.light-mode .footer-top {
+            border-color: rgba(15, 23, 42, 0.09);
+        }
+
+        .footer-brand {
+            margin-bottom: 10px !important;
+            font-size: 20px !important;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+        }
+
+        .footer-tagline {
+            font-size: 14px !important;
+            line-height: 1.7;
+            opacity: 0.68;
+        }
+
+        .footer-heading {
+            margin-bottom: 14px !important;
+            font-size: 12px !important;
+            font-weight: 700;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            opacity: 0.55;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 9px;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: color 0.2s ease, opacity 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #22c55e;
+            opacity: 1;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 767px) {
+
+            .about-facts {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stack {
+                gap: 7px;
+            }
+
+            .hero-stack li {
+                padding: 5px 12px;
+                font-size: 11.5px;
+            }
+
+            .project-card .project-item img {
+                height: 190px;
+            }
+
+            .project-card__body {
+                padding: 20px 18px;
+            }
+
+            .footer-top {
+                text-align: center;
+                padding: 40px 0 28px;
+            }
+
+            .footer-top > div {
+                margin-bottom: 26px;
+            }
+
+            .timeline {
+                padding-left: 26px;
+            }
+
+            .timeline__item::before {
+                left: -26px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .hero-badge__dot {
+                animation: none;
+            }
+
+            .skill-card,
+            .project-card,
+            .hero-stack li {
+                transition: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -921,8 +1669,11 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- Lien d'évitement (accessibilité clavier) -->
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
     <!-- Preloader Start -->
-    <div id="preloader-wapper">
+    <div id="preloader-wapper" aria-hidden="true">
         <div class="loader-middle"></div>
     </div>
     <!-- Prealoader End -->
@@ -931,19 +1682,20 @@
     <div class="maslin-page-wrapper">
 
         <!-- Navbar Start -->
-        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav" aria-label="Navigation principale">
             <div class="container">
                 <a class="navbar-brand js-scroll" href="index.html">MEDJ Bilal</a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
                 <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
                     <ul class="navbar-nav">
-                        <li class="nav-item"> <a class="nav-link js-scroll active" href="#home">accueil</a></li>
-                        <li class="nav-item"> <a class="nav-link js-scroll" href="#about">À-propos</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll active" href="#home">Accueil</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="#about">À propos</a></li>
                         <li class="nav-item"> <a class="nav-link js-scroll" href="#service">Services</a></li>
+                        <li class="nav-item"> <a class="nav-link js-scroll" href="#experience">Parcours</a></li>
                         <li class="nav-item"> <a class="nav-link js-scroll" href="#project">Projets</a></li>
                         <li class="nav-item"> <a class="nav-link js-scroll" href="#contact">Contact</a></li>
                         <!-- Lien spécial Cyber dans le menu -->
@@ -959,35 +1711,50 @@
         </nav>
         <!-- Navbar End -->
 
+        <main id="main-content">
+
         <!-- accueil Section Start -->
         <header id="home" class="home-area hero-equal-height overflow-hidden section-padding">
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-10 offset-lg-1 col-md-8 offset-md-2">
                         <div class="text-center home-content z-index position-relative">
+                            <p class="hero-badge"><span class="hero-badge__dot" aria-hidden="true"></span>Disponible pour une alternance dès septembre 2026</p>
                             <h1>MEDJ Bilal</h1>
-                            <p>Étudiant en informatique, passionné et en constante évolution. Je me forme à un large éventail de technologies: développement web (HTML, CSS, JavaScript), programmation (Java, C, C#), bases de données et administration Linux.</p>
-                            <p>Curieux, polyvalent et motivé, je recherche un stage pour mettre en pratique mes compétences et progresser au sein d’une équipe dynamique. 
-                               <span class="element" data-text1="développeur web." data-text2="développeur front-end." data-text3="passionné de technologie." data-loop="true" data-backdelay="1500"></span>
-                            </p>
+                            <p class="hero-role">Master&nbsp;2 Cybersécurité — UPHF Valenciennes</p>
+                            <p>Je suis <span class="element" data-text1="développeur full-stack." data-text2="passionné de cybersécurité." data-text3="administrateur Linux." data-text4="curieux et polyvalent." data-loop="true" data-backdelay="1800"></span></p>
+                            <p class="hero-pitch">Après une Licence Informatique et un stage de développement full-stack, je me spécialise en sécurité des réseaux et des systèmes. Je conçois des applications web, j'administre des environnements Linux et j'applique les bonnes pratiques de sécurité (OWASP, durcissement, supervision SOC).</p>
+                            <ul class="hero-stack" aria-label="Technologies principales">
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>Bash</li>
+                                <li>Linux</li>
+                                <li>SQL</li>
+                            </ul>
                             <div class="home-actions">
-                                <a href="#contact" class="button js-scroll">Contactez-moi</a>
-                                <a href="#project" class="button button-ghost js-scroll">Voir mes projets</a>
+                                <a href="#project" class="button js-scroll">Voir mes projets</a>
+                                <a href="cv-interactif.html" class="button button-ghost">CV interactif ⚡</a>
+                                <a href="#contact" class="button button-ghost js-scroll">Me contacter</a>
                             </div>
                         </div>
                     </div>
                  <!-- Réseaux Sociaux -->
                  <div class="social">
-                    <a class="text">Réseaux Sociaux</a>
-                    <div class="line"></div>
-                    <a href="https://www.linkedin.com/in/bilal-medj-0960282a4/" target="_blank">
-                        <i class="fa fa-linkedin"></i>  
+                    <span class="text">Réseaux Sociaux</span>
+                    <div class="line" aria-hidden="true"></div>
+                    <a href="https://www.linkedin.com/in/bilal-medj-0960282a4/" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn de Bilal MEDJ (nouvel onglet)">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="https://github.com/MjBilaal" target="_blank">
-                        <i class="fa fa-github"></i>  
+                    <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub de Bilal MEDJ (nouvel onglet)">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:bilal.medj@hotmail.fr" aria-label="Envoyer un e-mail à Bilal MEDJ">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
                     </a>
                 </div>
-                
+
 
                 </div>
             </div>
@@ -1007,36 +1774,47 @@
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-12">
                 <div class="à-propos-image text-center">
-                    <img src="assets/img/pdp.jpg" alt="Photo de profil" style="max-width: 100%; border-radius: 10px;">  
+                    <picture>
+                        <source srcset="assets/img/pdp.webp" type="image/webp">
+                        <img src="assets/img/pdp.jpg" width="317" height="396" loading="lazy" decoding="async"
+                             alt="Portrait de MEDJ Bilal, étudiant en Master Cybersécurité" style="max-width: 100%; border-radius: 10px;">
+                    </picture>
                 </div>
             </div>
             <div class="col-lg-7 col-md-12">
-                <div class="à-propos-content" style="padding-left: 20px;">
-                    
-                    <h3 class="mb-4">Bienvenue sur <span class="color-text">Mon Profil</span></h3>
-                    <h4 class="mb-3">Quelques mots sur moi</h4>
+                <div class="à-propos-content">
+
+                    <h3 class="mb-4">Bienvenue sur <span class="color-text">mon profil</span></h3>
+                    <h4 class="mb-3">Qui suis-je&nbsp;?</h4>
 
                     <p class="mb-4">
-                        Bonjour, je suis <strong class="color-text">MEDJ Bilal</strong>, étudiant en informatique en France. Passionné par le développement web et logiciel, je me forme activement sur un large éventail de technologies allant du front-end au back-end.
+                        Bonjour, je suis <strong class="color-text">MEDJ Bilal</strong>, étudiant en <strong>Master&nbsp;2 Cybersécurité à l'UPHF</strong> (Valenciennes), après un M1 validé et une Licence Informatique dans le même établissement. Basé à Douai, je recherche une <strong>alternance dès septembre 2026</strong> en cybersécurité ou en développement.
                     </p>
 
                     <p class="mb-4">
-                        Au fil des projets et des expériences académiques, j’ai acquis des compétences solides en <strong>HTML, CSS, JavaScript, Java, C, C#, bases de données et administration sous Linux.</strong>
+                        Mon parcours mêle le développement et la sécurité&nbsp;: j'écris du code en <strong>Java, Python, PHP, C, JavaScript et Bash</strong>, je conçois des interfaces avec <strong>HTML5, CSS3, Bootstrap et Tailwind</strong>, et je travaille au quotidien sur <strong>Linux</strong>, les <strong>réseaux TCP/IP</strong>, le <strong>durcissement système</strong> et les vulnérabilités <strong>OWASP</strong>.
                     </p>
 
-                    <h4 class="mb-3">Quelles sont mes valeurs ?</h4>
+                    <h4 class="mb-3">Ma façon de travailler</h4>
                     <p class="mb-4">
-                        Lors du développement d'un projet, je m'efforce de comprendre les besoins du client afin de livrer un produit fonctionnel, optimisé et évolutif.
+                        Lors d'un projet, je commence par comprendre le besoin réel avant d'écrire la moindre ligne de code. Je livre ensuite un produit fonctionnel, testé, documenté et pensé pour évoluer — avec la sécurité intégrée dès la conception plutôt qu'ajoutée après coup.
                     </p>
+
+                    <ul class="about-facts" aria-label="Informations pratiques">
+                        <li><span class="about-facts__label">Localisation</span><span class="about-facts__value">Douai, Hauts-de-France</span></li>
+                        <li><span class="about-facts__label">Recherche</span><span class="about-facts__value">Alternance / stage</span></li>
+                        <li><span class="about-facts__label">Mobilité</span><span class="about-facts__value">Permis B — véhiculé</span></li>
+                        <li><span class="about-facts__label">Langues</span><span class="about-facts__value">Français, Anglais</span></li>
+                    </ul>
 
                     <div class="contact-info">
-                        <p><b>📞 Téléphone :</b> +33 6 03 66 59 93</p>
-                        <p><b>📧 E-mail :</b> bilal.medj@hotmail.fr</p>
+                        <p><b>📞 Téléphone :</b> <a href="tel:+33603665993">+33 6 03 66 59 93</a></p>
+                        <p><b>📧 E-mail :</b> <a href="mailto:bilal.medj@hotmail.fr">bilal.medj@hotmail.fr</a></p>
                         <div class="mt-4">
                             <!-- Bouton Cyber Interactif Stylé -->
                             <a href="cv-interactif.html" class="button-cyber">Mon CV Interactif ⚡</a>
                             <!-- Bouton PDF Classique -->
-                            <a href="assets/cv/cv_medj_bilal.pdf" class="button" download>Télécharger mon CV</a>
+                            <a href="assets/cv/cv_medj_bilal.pdf" class="button" download>Télécharger mon CV (PDF)</a>
                         </div>
                     </div>
 
@@ -1050,85 +1828,68 @@
 
 		
 		<!-- Skill Section Start -->
-		<section class="skill-area section-padding">
+		<section id="skills" class="skill-area section-padding" aria-labelledby="skills-title">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 skill-box">
-						<!-- skill item -->
-						<div class="skill-item">
-							<div class="skill-info clearfix">
-								<h4 class="float-left mb-3 mt-0">HTML & CSS</h4>
-								<span class="float-right">90%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-								</div>
-							</div>
+					<div class="col-sm-12">
+						<div class="section-title">
+							<h2 id="skills-title">Compétences techniques</h2>
 						</div>
 					</div>
-					<div class="col-md-6 skill-box">
-						<!-- skill item -->
-						<div class="skill-item">
-							<div class="skill-info clearfix">
-								<h4 class="float-left mb-3 mt-0">JavaScript</h4>
-								<span class="float-right">95%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
-								</div>
-							</div>
+				</div>
+				<div class="row skills-grid">
+
+					<div class="col-lg-4 col-md-6 skill-box">
+						<div class="skill-card">
+							<h3 class="skill-card__title"><span class="skill-card__icon" aria-hidden="true">&lt;/&gt;</span>Programmation</h3>
+							<ul class="tech-list">
+								<li>Python</li><li>Java</li><li>C</li><li>JavaScript</li><li>PHP</li><li>Bash</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-md-6 skill-box">
-						<!-- skill item -->
-						<div class="skill-item">
-							<div class="skill-info clearfix">
-								<h4 class="float-left mb-3 mt-0">WordPress</h4>
-								<span class="float-right">85%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85">
-								</div>
-							</div>
+
+					<div class="col-lg-4 col-md-6 skill-box">
+						<div class="skill-card">
+							<h3 class="skill-card__title"><span class="skill-card__icon" aria-hidden="true">🌐</span>Développement web</h3>
+							<ul class="tech-list">
+								<li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>Tailwind CSS</li><li>Node.js</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-md-6 skill-box">
-						<!-- skill item -->
-						<div class="skill-item">
-							<div class="skill-info clearfix">
-								<h4 class="float-left mb-3 mt-0">Bases de données</h4>
-								<span class="float-right">70%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
-								</div>
-							</div>
+
+					<div class="col-lg-4 col-md-6 skill-box">
+						<div class="skill-card skill-card--accent">
+							<h3 class="skill-card__title"><span class="skill-card__icon" aria-hidden="true">🛡️</span>Cybersécurité</h3>
+							<ul class="tech-list">
+								<li>Linux</li><li>TCP/IP</li><li>SOC</li><li>Durcissement</li><li>OWASP</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-md-6 skill-box">
-						<!-- skill item -->
-						<div class="skill-item">
-							<div class="skill-info clearfix">
-								<h4 class="float-left mb-3 mt-0">Langage C/C#</h4>
-								<span class="float-right">70%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
-								</div>
-							</div>
+
+					<div class="col-lg-4 col-md-6 skill-box">
+						<div class="skill-card">
+							<h3 class="skill-card__title"><span class="skill-card__icon" aria-hidden="true">🗄️</span>Bases de données</h3>
+							<ul class="tech-list">
+								<li>SQL</li><li>MySQL</li><li>Modélisation</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col-md-6 skill-box">
-						<!-- skill item -->
-						<div class="skill-item">
-							<div class="skill-info clearfix">
-								<h4 class="float-left mb-3 mt-0">Adobe Premiere Pro</h4>
-								<span class="float-right">90%</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90">
-								</div>
-							</div>
+
+					<div class="col-lg-4 col-md-6 skill-box">
+						<div class="skill-card">
+							<h3 class="skill-card__title"><span class="skill-card__icon" aria-hidden="true">🧰</span>Outils</h3>
+							<ul class="tech-list">
+								<li>Git</li><li>VS Code</li><li>Eclipse</li><li>Pack Office</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 skill-box">
+						<div class="skill-card">
+							<h3 class="skill-card__title"><span class="skill-card__icon" aria-hidden="true">💻</span>Systèmes</h3>
+							<ul class="tech-list">
+								<li>Linux</li><li>Windows</li><li>Réseaux</li><li>Virtualisation</li>
+							</ul>
 						</div>
 					</div>
 
@@ -1143,7 +1904,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="section-title">
-                    <h2>Mes Services</h2>
+                    <h2>Ce que je fais</h2>
+                    <p class="section-subtitle">Les domaines sur lesquels je travaille, en études comme en projets personnels.</p>
                 </div>
             </div>
         </div>
@@ -1152,10 +1914,10 @@
                 <div class="col-lg-4 col-md-6 services-item">
                     <div class="single-services-box">
                         <div class="single-services">
-                            <div class="services-icon"> <i class="pe-7s-display1"></i> </div>
+                            <div class="services-icon"> <i class="pe-7s-display1" aria-hidden="true"></i> </div>
                             <div class="services-text">
-                                <h3>Développement Web</h3>
-                                <p>Création de sites internet performants et adaptés à vos besoins pour une expérience utilisateur optimale.</p>
+                                <h3>Développement web full-stack</h3>
+                                <p>Sites et applications web du front-end au back-end : interfaces responsives, logique serveur, base de données et déploiement.</p>
                             </div>
                         </div>
                     </div>
@@ -1163,10 +1925,10 @@
                 <div class="col-lg-4 col-md-6 services-item">
                     <div class="single-services-box">
                         <div class="single-services">
-                            <div class="services-icon"> <i class="pe-7s-phone"></i> </div>
+                            <div class="services-icon"> <i class="pe-7s-shield" aria-hidden="true"></i> </div>
                             <div class="services-text">
-                                <h3>Développement d'Application</h3>
-                                <p>Conception et développement d'applications simples pour répondre aux besoins spécifiques.</p>
+                                <h3>Sécurité applicative</h3>
+                                <p>Analyse des vulnérabilités courantes (Top 10 OWASP), sécurisation des formulaires et des accès, revue de code orientée sécurité.</p>
                             </div>
                         </div>
                     </div>
@@ -1174,10 +1936,10 @@
                 <div class="col-lg-4 col-md-6 services-item">
                     <div class="single-services-box">
                         <div class="single-services">
-                            <div class="services-icon"> <i class="pe-7s-tools"></i> </div>
+                            <div class="services-icon"> <i class="pe-7s-server" aria-hidden="true"></i> </div>
                             <div class="services-text">
-                                <h3>Design UI/UX</h3>
-                                <p>Conception d’interfaces intuitives et attrayantes pour offrir une expérience utilisateur de qualité.</p>
+                                <h3>Administration Linux &amp; réseaux</h3>
+                                <p>Installation et durcissement de serveurs Linux, configuration réseau TCP/IP, gestion des droits, scripts d'automatisation en Bash.</p>
                             </div>
                         </div>
                     </div>
@@ -1185,10 +1947,10 @@
                 <div class="col-lg-4 col-md-6 services-item">
                     <div class="single-services-box">
                         <div class="single-services">
-                            <div class="services-icon"> <i class="pe-7s-share"></i> </div>
+                            <div class="services-icon"> <i class="pe-7s-graph1" aria-hidden="true"></i> </div>
                             <div class="services-text">
-                                <h3>Communication Rapide</h3>
-                                <p>Disponibilité et réactivité pour répondre à vos demandes et assurer un suivi de qualité.</p>
+                                <h3>Bases de données</h3>
+                                <p>Modélisation relationnelle, écriture de requêtes SQL optimisées, intégration MySQL et cohérence des données.</p>
                             </div>
                         </div>
                     </div>
@@ -1196,10 +1958,10 @@
                 <div class="col-lg-4 col-md-6 services-item">
                     <div class="single-services-box">
                         <div class="single-services">
-                            <div class="services-icon"> <i class="pe-7s-edit"></i> </div>
+                            <div class="services-icon"> <i class="pe-7s-tools" aria-hidden="true"></i> </div>
                             <div class="services-text">
-                                <h3>Optimisation SEO</h3>
-                                <p>Amélioration de la visibilité de votre site sur les moteurs de recherche pour attirer plus de trafic.</p>
+                                <h3>Qualité &amp; tests</h3>
+                                <p>Rédaction de tests, correction de bugs, versionnement Git et documentation — des pratiques appliquées lors de mon stage en entreprise.</p>
                             </div>
                         </div>
                     </div>
@@ -1207,10 +1969,10 @@
                 <div class="col-lg-4 col-md-6 services-item">
                     <div class="single-services-box">
                         <div class="single-services">
-                            <div class="services-icon"> <i class="pe-7s-refresh"></i> </div>
+                            <div class="services-icon"> <i class="pe-7s-share" aria-hidden="true"></i> </div>
                             <div class="services-text">
-                                <h3>Maintenance & Support</h3>
-                                <p>Suivi et mises à jour régulières pour assurer la stabilité et la sécurité de vos projets.</p>
+                                <h3>Analyse des besoins</h3>
+                                <p>Trois ans d'expérience en conseil client m'ont appris à écouter, vulgariser et traduire un besoin métier en solution technique.</p>
                             </div>
                         </div>
                     </div>
@@ -1230,8 +1992,16 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 counter-item">
                             <div class="single-counter-box">
                                 <div class="single-counter">
-                                    <h3 class="odometer" data-count="2">00</h3>
-                                    <p>Annees d'experience</p>
+                                    <h3 class="odometer" data-count="5">00</h3>
+                                    <p>Années d'études en informatique</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 counter-item">
+                            <div class="single-counter-box">
+                                <div class="single-counter">
+                                    <h3 class="odometer" data-count="3">00</h3>
+                                    <p>Mois de stage en développement</p>
                                 </div>
                             </div>
                         </div>
@@ -1239,23 +2009,15 @@
                             <div class="single-counter-box">
                                 <div class="single-counter">
                                     <h3 class="odometer" data-count="4">00</h3>
-                                    <p>Projets accomplis</p>
+                                    <p>Projets web réalisés</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12 counter-item">
                             <div class="single-counter-box">
                                 <div class="single-counter">
-                                    <h3 class="odometer" data-count="4">00</h3>
-                                    <p>Clients satisfaits</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 counter-item">
-                            <div class="single-counter-box">
-                                <div class="single-counter">
-                                    <h3 class="odometer" data-count="10">00</h3>
-                                    <p>Technologies pratiquees</p>
+                                    <h3 class="odometer" data-count="20">00</h3>
+                                    <p>Technologies pratiquées</p>
                                 </div>
                             </div>
                         </div>
@@ -1272,68 +2034,151 @@
             <div class="col-sm-12">
                 <div class="section-title">
                     <h2>Projets récents</h2>
+                    <p class="section-subtitle">Une sélection de réalisations académiques et personnelles. Cliquez sur une image pour l'agrandir.</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="project-list">
-                    <ul class="nav" id="project-flters">
-                        <li class="filter filter-active" data-filter=".all">Tous</li>
-                        <li class="filter" data-filter=".branding">Web Design</li>
-                        <li class="filter" data-filter=".application">application</li>
+                    <ul class="nav" id="project-flters" role="tablist" aria-label="Filtrer les projets par catégorie">
+                        <li class="filter filter-active" data-filter=".all" role="button" tabindex="0" aria-pressed="true">Tous</li>
+                        <li class="filter" data-filter=".web" role="button" tabindex="0" aria-pressed="false">Web</li>
+                        <li class="filter" data-filter=".fullstack" role="button" tabindex="0" aria-pressed="false">Full-stack</li>
+                        <li class="filter" data-filter=".front" role="button" tabindex="0" aria-pressed="false">Front-end</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="project-container">
+
             <!-- project-item 1 -->
-            <div class="col-lg-6 col-md-6 project-grid-item all branding webdesign">
-                <a class="popup-img project-item" href="assets/img/projects/work-1.jpg">
-                    <img src="assets/img/projects/work-1.jpg" alt="img">
-                    <div class="project-img-overlay">
-                        <div class="project-content">
-                            <h4>Site web d'un e-commerce</h4>
-                            <h6>Voir le projet</h6>
+            <article class="col-lg-6 col-md-6 project-grid-item all web fullstack">
+                <div class="project-card">
+                    <a class="popup-img project-item" href="assets/img/projects/work-1.jpg" aria-label="Agrandir la capture du projet e-commerce">
+                        <picture>
+                            <source srcset="assets/img/projects/work-1.webp" type="image/webp">
+                            <img src="assets/img/projects/work-1.jpg" width="1100" height="544" loading="lazy" decoding="async"
+                                 alt="Capture d'écran de la boutique en ligne : catalogue produits et panier">
+                        </picture>
+                        <div class="project-img-overlay">
+                            <div class="project-content">
+                                <h6>Agrandir l'aperçu</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Boutique e-commerce</h3>
+                        <p class="project-card__desc">Site marchand complet : catalogue produits, fiches détaillées, panier persistant et tunnel de commande. Gestion des stocks et des commandes côté back-office, avec un espace client sécurisé.</p>
+                        <ul class="project-card__tags" aria-label="Technologies utilisées">
+                            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>MySQL</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fa fa-github" aria-hidden="true"></i> Code source
+                            </a>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </article>
+
             <!-- project-item 2 -->
-            <div class="col-lg-6 col-md-6 project-grid-item all application photography">
-                <a class="popup-img project-item" href="assets/img/projects/work-2.jpg">
-                    <img src="assets/img/projects/work-2.jpg" alt="img">
-                    <div class="project-img-overlay">
-                        <div class="project-content">
-                            <h4>Site web de comparaison d'un jeu vidéo</h4>
-                            <h6>Voir le projet</h6>
+            <article class="col-lg-6 col-md-6 project-grid-item all web front">
+                <div class="project-card">
+                    <a class="popup-img project-item" href="assets/img/projects/work-2.jpg" aria-label="Agrandir la capture du comparateur de jeux vidéo">
+                        <picture>
+                            <source srcset="assets/img/projects/work-2.webp" type="image/webp">
+                            <img src="assets/img/projects/work-2.jpg" width="1100" height="597" loading="lazy" decoding="async"
+                                 alt="Capture d'écran du comparateur de jeux vidéo affichant deux fiches côte à côte">
+                        </picture>
+                        <div class="project-img-overlay">
+                            <div class="project-content">
+                                <h6>Agrandir l'aperçu</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Comparateur de jeux vidéo</h3>
+                        <p class="project-card__desc">Application web permettant de rechercher des jeux et de comparer leurs caractéristiques côte à côte (note, genre, plateforme, prix). Interface dynamique alimentée par une API externe, avec filtres et tri en temps réel.</p>
+                        <ul class="project-card__tags" aria-label="Technologies utilisées">
+                            <li>JavaScript</li><li>API REST</li><li>Bootstrap</li><li>CSS3</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fa fa-github" aria-hidden="true"></i> Code source
+                            </a>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </article>
+
             <!-- project-item 3 -->
-            <div class="col-lg-6 col-md-6 project-grid-item all branding webdesign">
-                <a class="popup-img project-item" href="assets/img/projects/work-3.jpg">
-                    <img src="assets/img/projects/work-3.jpg" alt="img">
-                    <div class="project-img-overlay">
-                        <div class="project-content">
-                            <h4>Site web (forum) d'entraide aux devoirs</h4>
-                            <h6>Voir le projet</h6>
+            <article class="col-lg-6 col-md-6 project-grid-item all web fullstack">
+                <div class="project-card">
+                    <a class="popup-img project-item" href="assets/img/projects/work-3.jpg" aria-label="Agrandir la capture du forum d'entraide aux devoirs">
+                        <picture>
+                            <source srcset="assets/img/projects/work-3.webp" type="image/webp">
+                            <img src="assets/img/projects/work-3.jpg" width="1100" height="521" loading="lazy" decoding="async"
+                                 alt="Capture d'écran du forum d'entraide aux devoirs avec la liste des discussions">
+                        </picture>
+                        <div class="project-img-overlay">
+                            <div class="project-content">
+                                <h6>Agrandir l'aperçu</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Forum d'entraide aux devoirs</h3>
+                        <p class="project-card__desc">Plateforme communautaire où les étudiants publient leurs questions et y répondent. Authentification, gestion des rôles, système de catégories et de votes, modération des contenus et protection contre les injections SQL et le XSS.</p>
+                        <ul class="project-card__tags" aria-label="Technologies utilisées">
+                            <li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Sécurité OWASP</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fa fa-github" aria-hidden="true"></i> Code source
+                            </a>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+            </article>
+
             <!-- project-item 4 -->
-            <div class="col-lg-6 col-md-6 project-grid-item all branding photography">
-                <a class="popup-img project-item" href="assets/img/projects/work-4.jpg">
-                    <img src="assets/img/projects/work-4.jpg" alt="img">
-                    <div class="project-img-overlay">
-                        <div class="project-content">
-                            <h4>Site web d'un restaurant</h4>
-                            <h6>Voir le projet</h6>
+            <article class="col-lg-6 col-md-6 project-grid-item all web front">
+                <div class="project-card">
+                    <a class="popup-img project-item" href="assets/img/projects/work-4.jpg" aria-label="Agrandir la capture du site de restaurant">
+                        <picture>
+                            <source srcset="assets/img/projects/work-4.webp" type="image/webp">
+                            <img src="assets/img/projects/work-4.jpg" width="1100" height="529" loading="lazy" decoding="async"
+                                 alt="Capture d'écran du site vitrine de restaurant présentant la carte et la réservation">
+                        </picture>
+                        <div class="project-img-overlay">
+                            <div class="project-content">
+                                <h6>Agrandir l'aperçu</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Site vitrine de restaurant</h3>
+                        <p class="project-card__desc">Site vitrine responsive présentant la carte, les horaires et la localisation de l'établissement, avec un formulaire de réservation en ligne. Design mobile-first et optimisation du référencement local.</p>
+                        <ul class="project-card__tags" aria-label="Technologies utilisées">
+                            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive</li><li>SEO</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fa fa-github" aria-hidden="true"></i> Code source
+                            </a>
                         </div>
                     </div>
-                </a>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="project-more">D'autres projets sont disponibles sur mon
+                    <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                </p>
             </div>
         </div>
     </div>
@@ -1344,12 +2189,90 @@
 	
 		
 		
+        <!-- Parcours Section Start -->
+        <section id="experience" class="experience-area section-padding" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="section-title">
+                            <h2 id="experience-title">Mon parcours</h2>
+                            <p class="section-subtitle">Formation et expériences professionnelles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12">
+                        <h3 class="timeline-heading"><i class="fa fa-briefcase" aria-hidden="true"></i> Expériences</h3>
+                        <ol class="timeline">
+                            <li class="timeline__item timeline__item--current">
+                                <span class="timeline__period">2022 — Aujourd'hui</span>
+                                <h4 class="timeline__title">Conseiller de vente</h4>
+                                <p class="timeline__org">Leroy Merlin — Douai</p>
+                                <p class="timeline__desc">Conseil technique en plomberie et électricité, suivi des stocks, mise en rayon et optimisation de la disponibilité produit.</p>
+                                <ul class="timeline__tags"><li>Communication</li><li>Pédagogie</li><li>Conseil</li></ul>
+                            </li>
+                            <li class="timeline__item">
+                                <span class="timeline__period">Mars 2025 — Mai 2025</span>
+                                <h4 class="timeline__title">Développeur web — Stage</h4>
+                                <p class="timeline__org">Mission Locale du Douaisis — Douai</p>
+                                <p class="timeline__desc">Développement full-stack front-end et back-end, analyse des besoins utilisateurs, correction de bugs et rédaction de tests.</p>
+                                <ul class="timeline__tags"><li>Full-stack</li><li>Qualité</li><li>Git</li></ul>
+                            </li>
+                            <li class="timeline__item">
+                                <span class="timeline__period">2019 — 2024</span>
+                                <h4 class="timeline__title">Jobs étudiants &amp; intérim</h4>
+                                <p class="timeline__org">Hauts-de-France</p>
+                                <p class="timeline__desc">Logistique (inventaires, préparation de commandes, manutention) et vente/services (restauration rapide, livraison, accueil, caisse).</p>
+                                <ul class="timeline__tags"><li>Polyvalence</li><li>Rigueur</li><li>Gestion du stress</li></ul>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <h3 class="timeline-heading"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Formation</h3>
+                        <ol class="timeline">
+                            <li class="timeline__item timeline__item--current">
+                                <span class="timeline__period">2026 — en cours</span>
+                                <h4 class="timeline__title">Master Cybersécurité (M2)</h4>
+                                <p class="timeline__org">UPHF — Valenciennes</p>
+                                <p class="timeline__desc">Sécurité des réseaux et des systèmes, cryptographie, analyse de vulnérabilités, durcissement et supervision.</p>
+                            </li>
+                            <li class="timeline__item">
+                                <span class="timeline__period">2025 — 2026</span>
+                                <h4 class="timeline__title">Master Cybersécurité (M1) — validé</h4>
+                                <p class="timeline__org">UPHF — Valenciennes</p>
+                                <p class="timeline__desc">Fondamentaux de la sécurité offensive et défensive, réseaux, systèmes et bonnes pratiques de développement sécurisé.</p>
+                            </li>
+                            <li class="timeline__item">
+                                <span class="timeline__period">2021 — 2025</span>
+                                <h4 class="timeline__title">Licence Informatique</h4>
+                                <p class="timeline__org">UPHF — Valenciennes</p>
+                                <p class="timeline__desc">Algorithmique, programmation, bases de données, réseaux, systèmes d'exploitation et développement web.</p>
+                            </li>
+                            <li class="timeline__item">
+                                <span class="timeline__period">2019</span>
+                                <h4 class="timeline__title">Baccalauréat technologique STI2D</h4>
+                                <p class="timeline__org">Lycée Edmond Labbé — Douai</p>
+                            </li>
+                        </ol>
+                        <div class="text-center mt-4">
+                            <a href="cv-interactif.html" class="button-cyber">Voir le parcours détaillé ⚡</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Parcours Section End -->
+
         <!-- Contact Section Start -->
-        <section id="contact" class="contact-area section-padding">
+        <section id="contact" class="contact-area section-padding" aria-labelledby="contact-title">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 section-title">
-                        <h2>Contactez moi</h2>
+                        <h2 id="contact-title">Contactez-moi</h2>
+                        <p class="section-subtitle">Une opportunité d'alternance, un stage ou une question&nbsp;? Écrivez-moi, je réponds sous 48&nbsp;h.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -1357,72 +2280,77 @@
                         <div class="row contact-information">
                             <div class="col-lg-12 col-md-12 col-sm-12">
                                 <div class="contact-details">
-                                    <i class="fa fa-phone"></i>
-                                    <h6>Portable</h6>
-                                    <p>+33 6 03 66 59 93</p>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <h6>Téléphone</h6>
+                                    <p><a href="tel:+33603665993">+33 6 03 66 59 93</a></p>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12">
                                 <div class="contact-details">
-                                    <i class="fa fa-home"></i>
-                                    <h6>Adresse</h6>
-                                    <p>Douai</p>
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    <h6>Localisation</h6>
+                                    <p>Douai, Hauts-de-France</p>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12">
                                 <div class="contact-details">
-                                    <i class="fa fa-envelope"></i>
-                                    <h6>Email</h6>
-                                    <p>bilal.medj@hotmail.fr</p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <h6>E-mail</h6>
+                                    <p><a href="mailto:bilal.medj@hotmail.fr">bilal.medj@hotmail.fr</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="contact-details">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <h6>Réseaux</h6>
+                                    <p>
+                                        <a href="https://www.linkedin.com/in/bilal-medj-0960282a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                        &nbsp;·&nbsp;
+                                        <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-7">
-                        <p class="form-message"></p>
-                        <br>
-                        <form class="contact-form form" id="contact-form" action="https://formspree.io/f/xjkgwzey" method="POST">
-
-                            <script>
-                                const form = document.getElementById("contact-form");
-                                form.addEventListener("submit", async function(event) {
-                                    event.preventDefault();
-                                    const formData = new FormData(form);
-                                    const response = await fetch(form.action, {
-                                        method: form.method,
-                                        body: formData,
-                                        headers: { "Accept": "application/json" }
-                                    });
-                                    if (response.ok) {
-                                        form.innerHTML = "<p>✅ Message envoyé avec succès !</p>";
-                                    } else {
-                                        form.innerHTML = "<p>❌ Une erreur est survenue. Réessayez.</p>";
-                                    }
-                                });
-                              </script>
-
-
+                        <p class="form-message" id="form-status" role="status" aria-live="polite"></p>
+                        <form class="contact-form form" id="contact-form" action="https://formspree.io/f/xjkgwzey" method="POST" novalidate>
                             <div class="controls">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
-                                        <div class="form-group has-error has-danger">
-                                            <input id="form_name" type="text" name="name" placeholder="Tapez votre Nom" required="required"> </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group has-error has-danger">
-                                            <input id="form_email" type="email" name="email" placeholder="Tapez votre Mail" required="required"> </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group has-error has-danger">
-                                            <input id="form_subject" type="text" name="subject" placeholder="Tapez votre Sujet" required="required"> </div>
-                                    </div>
-                                    <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea id="form_message" name="message" placeholder="Tapez votre Message" rows="4" required="required"></textarea>
+                                            <label for="form_name">Nom complet <span aria-hidden="true">*</span></label>
+                                            <input id="form_name" type="text" name="name" autocomplete="name" placeholder="Ex. Jean Dupont" required aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_email">Adresse e-mail <span aria-hidden="true">*</span></label>
+                                            <input id="form_email" type="email" name="email" autocomplete="email" placeholder="Ex. jean.dupont@entreprise.fr" required aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_subject">Sujet <span aria-hidden="true">*</span></label>
+                                            <input id="form_subject" type="text" name="subject" placeholder="Ex. Proposition d'alternance" required aria-required="true">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button type="submit" class="button" data-text="Send Message"><span>Envoyer le message</span></button>
+                                        <div class="form-group">
+                                            <label for="form_message">Message <span aria-hidden="true">*</span></label>
+                                            <textarea id="form_message" name="message" placeholder="Décrivez votre demande…" rows="5" required aria-required="true"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Piège anti-spam : invisible pour les humains, rempli par les robots -->
+                                    <div class="form-honeypot" aria-hidden="true">
+                                        <label for="form_website">Ne remplissez pas ce champ</label>
+                                        <input id="form_website" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <button type="submit" class="button" id="form-submit"><span>Envoyer le message</span></button>
+                                        <p class="form-note">Vos coordonnées ne servent qu'à vous répondre et ne sont jamais transmises à des tiers.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1433,9 +2361,9 @@
         </section>
         <!-- Contact Section End -->
 
+        </main>
 
-
-        <div class="lines">
+        <div class="lines" aria-hidden="true">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -1445,14 +2373,41 @@
 
     </div>
     <!-- Page Wrapper Section End -->
-	
+
         <!-- Footer Section Start -->
         <footer class="footer-area">
+            <div class="container">
+                <div class="row footer-top">
+                    <div class="col-md-5">
+                        <p class="footer-brand">MEDJ Bilal</p>
+                        <p class="footer-tagline">Master Cybersécurité — Développeur web full-stack.<br>Douai, Hauts-de-France.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="footer-heading">Navigation</p>
+                        <ul class="footer-links">
+                            <li><a href="#about" class="js-scroll">À propos</a></li>
+                            <li><a href="#skills" class="js-scroll">Compétences</a></li>
+                            <li><a href="#experience" class="js-scroll">Parcours</a></li>
+                            <li><a href="#project" class="js-scroll">Projets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="footer-heading">Me joindre</p>
+                        <ul class="footer-links">
+                            <li><a href="mailto:bilal.medj@hotmail.fr">bilal.medj@hotmail.fr</a></li>
+                            <li><a href="tel:+33603665993">+33 6 03 66 59 93</a></li>
+                            <li><a href="https://www.linkedin.com/in/bilal-medj-0960282a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            <li><a href="cv-interactif.html">CV interactif ⚡</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="copyright-area text-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <p>Copyright &copy; 2026 - Tous droits réservés.</p>
+                            <p>&copy; <span id="footer-year">2026</span> MEDJ Bilal — Tous droits réservés.</p>
                         </div>
                     </div>
                 </div>
@@ -1462,17 +2417,81 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="back-to-top back-to-top-pulse"><i class="fa fa-caret-up"></i></a>
+    <a href="#home" class="back-to-top back-to-top-pulse js-scroll" aria-label="Revenir en haut de la page"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
 
     <!--Jquery js-->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/typed.js"></script>
-    <script src="assets/js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4JwWo5VPt9WyNp3Ne2uc2FMGEePHpqJ8&callback=initMap" async="" defer=""></script>
     <!--Site Main js-->
     <script src="assets/js/main.js"></script>
+
+    <!-- Formulaire de contact : envoi AJAX, validation et états de chargement -->
+    <script>
+        (function () {
+            var form = document.getElementById("contact-form");
+            var status = document.getElementById("form-status");
+            var submit = document.getElementById("form-submit");
+            if (!form || !status || !submit) { return; }
+
+            var defaultLabel = submit.innerHTML;
+
+            function setStatus(message, type) {
+                status.textContent = message;
+                status.className = "form-message" + (type ? " form-message--" + type : "");
+            }
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Le piège anti-spam a été rempli : on simule un succès sans rien envoyer
+                var honeypot = form.querySelector('input[name="_gotcha"]');
+                if (honeypot && honeypot.value) {
+                    setStatus("Message envoyé avec succès. Merci !", "success");
+                    return;
+                }
+
+                if (!form.checkValidity()) {
+                    setStatus("Merci de remplir correctement tous les champs obligatoires.", "error");
+                    var firstInvalid = form.querySelector(":invalid");
+                    if (firstInvalid) { firstInvalid.focus(); }
+                    return;
+                }
+
+                submit.disabled = true;
+                submit.innerHTML = "<span>Envoi en cours…</span>";
+                setStatus("Envoi de votre message…", "");
+
+                fetch(form.action, {
+                    method: form.method,
+                    body: new FormData(form),
+                    headers: { "Accept": "application/json" }
+                }).then(function (response) {
+                    if (response.ok) {
+                        form.reset();
+                        setStatus("✅ Message envoyé avec succès. Je vous réponds sous 48 h.", "success");
+                    } else {
+                        setStatus("❌ L'envoi a échoué. Écrivez-moi directement à bilal.medj@hotmail.fr.", "error");
+                    }
+                }).catch(function () {
+                    setStatus("❌ Connexion impossible. Écrivez-moi directement à bilal.medj@hotmail.fr.", "error");
+                }).then(function () {
+                    submit.disabled = false;
+                    submit.innerHTML = defaultLabel;
+                });
+            });
+        })();
+    </script>
+
+    <!-- Année du pied de page toujours à jour -->
+    <script>
+        (function () {
+            var year = document.getElementById("footer-year");
+            if (year) { year.textContent = new Date().getFullYear(); }
+        })();
+    </script>
+
     <script>
         (function () {
             var storageKey = "portfolio-theme";
@@ -1504,7 +2523,7 @@
     <script>
         (function () {
             var revealTargets = document.querySelectorAll(
-                ".section-title, .skill-item, .single-services-box, .single-counter-box, .project-item, .contact-details, .contact-area .form, .about-area .row.align-items-center"
+                ".section-title, .skill-card, .single-services-box, .single-counter-box, .timeline__item, .contact-details, .contact-area .form, .about-area .row.align-items-center"
             );
 
             if (!revealTargets.length) {

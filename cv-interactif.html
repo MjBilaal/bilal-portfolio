@@ -4,12 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilal Medj | CV Interactif</title>
-    <meta name="description" content="CV interactif de Bilal Medj, etudiant en Master Cybersecurite: experiences, competences techniques, parcours et contacts.">
-    <meta property="og:title" content="Bilal Medj | CV Interactif">
-    <meta property="og:description" content="Profil cybersecurite et developpement: experiences, stack technique, parcours et contact direct.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="cv-interactif.html">
+    <title>CV interactif — MEDJ Bilal | Master 2 Cybersécurité</title>
+    <meta name="description" content="CV interactif de MEDJ Bilal, étudiant en Master 2 Cybersécurité à l'UPHF : expériences, compétences techniques, parcours et contact.">
+    <meta name="author" content="MEDJ Bilal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bilalmedj.com/cv-interactif.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/meta/icon-192.png">
+    <link rel="apple-touch-icon" href="assets/img/meta/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="CV interactif — MEDJ Bilal | Master 2 Cybersécurité">
+    <meta property="og:description" content="Profil cybersécurité et développement : expériences, stack technique, parcours et contact direct.">
+    <meta property="og:type" content="profile">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://bilalmedj.com/cv-interactif.html">
+    <meta property="og:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CV interactif — MEDJ Bilal">
+    <meta name="twitter:description" content="Master 2 Cybersécurité UPHF. Expériences, compétences techniques et parcours.">
+    <meta name="twitter:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
     <meta name="theme-color" content="#0b1220">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -626,6 +645,491 @@
             transform: translateY(0);
         }
 
+        /* ============================================================
+           LANGUES
+           ============================================================ */
+
+        .lang-heading {
+            margin: 24px 0 12px;
+            font-family: var(--font-code);
+            font-size: .74rem;
+            letter-spacing: .8px;
+            text-transform: uppercase;
+            color: var(--text-soft);
+            font-weight: 600;
+        }
+
+        .lang-list {
+            display: grid;
+            gap: 9px;
+        }
+
+        .lang-item {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed var(--border);
+        }
+
+        .lang-item:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .lang-item__name {
+            font-weight: 700;
+            font-size: .88rem;
+        }
+
+        .lang-item__level {
+            font-family: var(--font-code);
+            font-size: .7rem;
+            color: var(--text-soft);
+            text-align: right;
+        }
+
+        /* ============================================================
+           PROJETS
+           ============================================================ */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 14px;
+            margin-bottom: var(--space-6);
+        }
+
+        .project-card-cv {
+            padding: 18px 18px 16px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background: color-mix(in srgb, var(--accent) 5%, transparent);
+            transition: transform .25s ease, border-color .25s ease, background-color .25s ease;
+        }
+
+        .project-card-cv:hover {
+            transform: translateY(-3px);
+            border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+            background: color-mix(in srgb, var(--accent) 11%, transparent);
+        }
+
+        .project-card-cv__name {
+            margin: 0 0 9px;
+            font-family: var(--font-code);
+            font-size: .88rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .project-card-cv__desc {
+            margin: 0 0 13px;
+            font-size: .83rem;
+            line-height: 1.7;
+            color: var(--text-soft);
+        }
+
+        .project-card-cv .chips {
+            gap: 6px;
+        }
+
+        .project-card-cv .chip {
+            font-size: .67rem;
+            padding: 5px 9px;
+        }
+
+        /* ============================================================
+           MINI-JEU : REPERE L'ARNAQUE
+           ============================================================ */
+
+        .game {
+            margin-top: var(--space-6);
+        }
+
+        .game__intro {
+            margin: -8px 0 20px;
+            font-size: .9rem;
+            line-height: 1.7;
+            color: var(--text-soft);
+            max-width: 62ch;
+        }
+
+        .game__board {
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            overflow: hidden;
+        }
+
+        .game__head {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+            background: color-mix(in srgb, var(--accent) 7%, transparent);
+            font-family: var(--font-code);
+            font-size: .72rem;
+            letter-spacing: .6px;
+            text-transform: uppercase;
+        }
+
+        .game__step {
+            color: var(--text-soft);
+        }
+
+        .game__score {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        .game__score-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .game__progress {
+            height: 3px;
+            background: color-mix(in srgb, var(--accent) 12%, transparent);
+        }
+
+        .game__progress span {
+            display: block;
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, var(--accent), var(--accent-2));
+            transition: width .45s ease;
+        }
+
+        .game__stage {
+            padding: 22px 20px 24px;
+        }
+
+        /* --- Ecran d'accueil et resultat --- */
+
+        .game__splash {
+            text-align: center;
+            padding: 18px 6px 10px;
+        }
+
+        .game__splash h3 {
+            margin: 0 0 10px;
+            font-family: var(--font-code);
+            font-size: 1.15rem;
+            letter-spacing: .4px;
+        }
+
+        .game__splash p {
+            margin: 0 auto 22px;
+            max-width: 48ch;
+            font-size: .9rem;
+            line-height: 1.7;
+            color: var(--text-soft);
+        }
+
+        .game__verdict-score {
+            font-family: var(--font-code);
+            font-size: 2.6rem;
+            font-weight: 800;
+            line-height: 1;
+            margin: 0 0 6px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .game__verdict-label {
+            font-family: var(--font-code);
+            font-size: .74rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-soft);
+            margin: 0 0 18px;
+        }
+
+        .game__recap {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 7px;
+            list-style: none;
+            padding: 0;
+            margin: 0 0 22px;
+        }
+
+        .game__recap li {
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+            border-radius: 8px;
+            font-family: var(--font-code);
+            font-size: .78rem;
+            font-weight: 700;
+            border: 1px solid var(--border);
+        }
+
+        .game__recap li.is-hit {
+            border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+            background: color-mix(in srgb, var(--accent) 18%, transparent);
+            color: var(--text-main);
+        }
+
+        .game__recap li.is-miss {
+            border-color: rgba(248, 113, 113, .55);
+            background: rgba(248, 113, 113, .14);
+            color: #fca5a5;
+        }
+
+        .app.is-light .game__recap li.is-miss {
+            color: #b91c1c;
+        }
+
+        .game__actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* --- Carte message --- */
+
+        .game__meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 9px;
+            margin-bottom: 14px;
+        }
+
+        .game__channel {
+            font-family: var(--font-code);
+            font-size: .68rem;
+            letter-spacing: .7px;
+            text-transform: uppercase;
+            padding: 5px 11px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: color-mix(in srgb, var(--accent) 10%, transparent);
+            color: var(--text-main);
+        }
+
+        .game__context {
+            font-size: .8rem;
+            color: var(--text-soft);
+        }
+
+        .game__message {
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background: color-mix(in srgb, var(--accent) 4%, transparent);
+            overflow: hidden;
+        }
+
+        .game__message-head {
+            padding: 13px 16px;
+            border-bottom: 1px dashed var(--border);
+            font-family: var(--font-code);
+            font-size: .76rem;
+            line-height: 1.85;
+            word-break: break-word;
+        }
+
+        .game__message-head b {
+            color: var(--text-soft);
+            font-weight: 500;
+            display: inline-block;
+            min-width: 52px;
+        }
+
+        .game__message-body {
+            padding: 16px;
+            font-size: .88rem;
+            line-height: 1.75;
+            white-space: pre-line;
+        }
+
+        .game__link {
+            display: inline-block;
+            margin-top: 4px;
+            font-family: var(--font-code);
+            font-size: .78rem;
+            padding: 6px 11px;
+            border-radius: 7px;
+            border: 1px solid var(--border);
+            background: color-mix(in srgb, var(--accent) 9%, transparent);
+            word-break: break-all;
+        }
+
+        /* --- Boutons de reponse --- */
+
+        .game__choices {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 11px;
+            margin-top: 18px;
+        }
+
+        .game__choice {
+            padding: 15px 14px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            background: color-mix(in srgb, var(--accent) 8%, transparent);
+            color: var(--text-main);
+            font-family: var(--font-code);
+            font-size: .82rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: transform .18s ease, border-color .18s ease, background-color .18s ease;
+        }
+
+        .game__choice:hover:not([disabled]) {
+            transform: translateY(-2px);
+            border-color: color-mix(in srgb, var(--accent) 58%, transparent);
+            background: color-mix(in srgb, var(--accent) 18%, transparent);
+        }
+
+        .game__choice[disabled] {
+            cursor: default;
+            opacity: .45;
+        }
+
+        .game__choice.is-picked {
+            opacity: 1;
+            border-width: 2px;
+        }
+
+        .game__choice.is-picked-right {
+            border-color: var(--accent);
+            background: color-mix(in srgb, var(--accent) 22%, transparent);
+        }
+
+        .game__choice.is-picked-wrong {
+            border-color: rgba(248, 113, 113, .75);
+            background: rgba(248, 113, 113, .16);
+        }
+
+        /* --- Verdict d'une question --- */
+
+        .game__feedback {
+            margin-top: 18px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            border-left-width: 3px;
+            background: color-mix(in srgb, var(--accent) 6%, transparent);
+            padding: 16px 18px;
+        }
+
+        .game__feedback.is-right {
+            border-left-color: var(--accent);
+        }
+
+        .game__feedback.is-wrong {
+            border-left-color: #f87171;
+        }
+
+        .game__feedback-title {
+            margin: 0 0 10px;
+            font-family: var(--font-code);
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+        }
+
+        .game__flags {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 12px;
+        }
+
+        .game__flags li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 7px;
+            font-size: .85rem;
+            line-height: 1.65;
+            color: var(--text-soft);
+        }
+
+        .game__flags li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .game__punchline {
+            margin: 0 0 16px;
+            padding-top: 12px;
+            border-top: 1px dashed var(--border);
+            font-family: var(--font-code);
+            font-size: .82rem;
+            line-height: 1.7;
+            color: var(--text-soft);
+            font-style: italic;
+        }
+
+        .game__next {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .game__hint {
+            margin: 14px 0 0;
+            font-size: .78rem;
+            color: var(--text-soft);
+            text-align: center;
+        }
+
+        .game__teaser {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 14px;
+            padding: 9px 14px;
+            border-radius: 999px;
+            border: 1px dashed color-mix(in srgb, var(--accent) 45%, transparent);
+            background: color-mix(in srgb, var(--accent) 7%, transparent);
+            font-family: var(--font-code);
+            font-size: .72rem;
+            letter-spacing: .4px;
+            color: var(--text-main);
+            transition: background-color .2s ease, border-color .2s ease, transform .2s ease;
+        }
+
+        .game__teaser:hover {
+            transform: translateY(-2px);
+            border-style: solid;
+            background: color-mix(in srgb, var(--accent) 16%, transparent);
+        }
+
+        @media (max-width: 560px) {
+
+            .game__choices {
+                grid-template-columns: 1fr;
+            }
+
+            .game__stage {
+                padding: 18px 15px 20px;
+            }
+
+            .game__message-body {
+                font-size: .84rem;
+            }
+        }
+
         .boot-screen {
             position: fixed;
             inset: 0;
@@ -720,6 +1224,365 @@
             transition: width .3s ease;
         }
 
+        /* ============================================================
+           PIEGE DU DEMARRAGE : FAUSSE ALERTE VIRUS
+           ============================================================ */
+
+        .boot-skip {
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .boot-skip button {
+            border: 0;
+            background: none;
+            color: rgba(120, 200, 165, 0.55);
+            font-family: var(--font-code);
+            font-size: .68rem;
+            letter-spacing: .6px;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: color .2s ease, background-color .2s ease;
+        }
+
+        .boot-skip button:hover {
+            color: #7ff0bb;
+            background: rgba(52, 211, 153, 0.1);
+        }
+
+        .boot-skip button:focus-visible {
+            outline: 2px solid #34d399;
+            outline-offset: 2px;
+        }
+
+        /* --- La fausse alerte --- */
+
+        .trap {
+            position: fixed;
+            inset: 0;
+            z-index: 90;
+            display: grid;
+            place-items: center;
+            padding: 20px;
+            background: rgba(2, 5, 12, 0.72);
+            backdrop-filter: blur(3px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .25s ease, visibility .25s ease;
+        }
+
+        .trap.is-open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .trap__box {
+            width: min(440px, 100%);
+            border-radius: 14px;
+            overflow: hidden;
+            background: #16181d;
+            border: 1px solid rgba(248, 113, 113, 0.45);
+            box-shadow: 0 26px 60px rgba(0, 0, 0, 0.65);
+            transform: scale(.9);
+            transition: transform .28s cubic-bezier(.34, 1.4, .64, 1);
+            font-family: system-ui, "Segoe UI", sans-serif;
+        }
+
+        .trap.is-open .trap__box {
+            transform: scale(1);
+        }
+
+        .trap__bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 9px 12px;
+            background: #c0392b;
+            color: #fff;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .3px;
+        }
+
+        .trap__close {
+            border: 0;
+            background: none;
+            color: rgba(255, 255, 255, .8);
+            font-size: .95rem;
+            line-height: 1;
+            cursor: pointer;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .trap__close:hover {
+            background: rgba(255, 255, 255, .18);
+            color: #fff;
+        }
+
+        .trap__body {
+            padding: 22px 22px 18px;
+            text-align: center;
+            color: #e8eaed;
+        }
+
+        .trap__icon {
+            font-size: 2.4rem;
+            line-height: 1;
+            margin-bottom: 12px;
+            animation: trapShake 1.6s ease-in-out infinite;
+        }
+
+        @keyframes trapShake {
+
+            0%, 88%, 100% { transform: rotate(0deg); }
+            91% { transform: rotate(-9deg); }
+            94% { transform: rotate(9deg); }
+            97% { transform: rotate(-5deg); }
+        }
+
+        .trap__title {
+            margin: 0 0 8px;
+            font-size: 1.06rem;
+            font-weight: 700;
+            color: #ff8a80;
+        }
+
+        .trap__text {
+            margin: 0 0 6px;
+            font-size: .86rem;
+            line-height: 1.6;
+            color: #c3c7cd;
+        }
+
+        .trap__list {
+            list-style: none;
+            padding: 0;
+            margin: 12px auto 18px;
+            max-width: 280px;
+            font-size: .78rem;
+            font-family: var(--font-code);
+            color: #ff9e94;
+            text-align: left;
+        }
+
+        .trap__list li {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .07);
+        }
+
+        .trap__list span {
+            color: #8d9299;
+        }
+
+        .trap__cta {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            border: 0;
+            border-radius: 9px;
+            background: linear-gradient(180deg, #2ecc71, #23a75c);
+            color: #04120a;
+            font-size: .93rem;
+            font-weight: 800;
+            letter-spacing: .3px;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(46, 204, 113, .35);
+            animation: trapPulse 1.9s ease-in-out infinite;
+            transition: transform .15s ease;
+        }
+
+        .trap__cta:hover {
+            transform: translateY(-1px);
+        }
+
+        @keyframes trapPulse {
+
+            0%, 100% { box-shadow: 0 6px 18px rgba(46, 204, 113, .35); }
+            50% { box-shadow: 0 6px 26px rgba(46, 204, 113, .62); }
+        }
+
+        .trap__timer {
+            margin: 14px 0 0;
+            font-size: .72rem;
+            color: #8d9299;
+        }
+
+        .trap__timer b {
+            color: #ff8a80;
+            font-family: var(--font-code);
+        }
+
+        .trap__ignore {
+            display: block;
+            margin: 12px auto 0;
+            border: 0;
+            background: none;
+            color: #6c7076;
+            font-size: .68rem;
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .trap__ignore:hover {
+            color: #9aa0a6;
+        }
+
+        /* --- La revelation --- */
+
+        .reveal-panel {
+            width: min(560px, 100%);
+            border-radius: 16px;
+            border: 1px solid rgba(56, 233, 146, 0.3);
+            background: rgba(3, 12, 8, 0.94);
+            box-shadow: 0 22px 54px rgba(0, 0, 0, 0.6);
+            padding: 28px 26px 24px;
+            text-align: center;
+            font-family: var(--font-code);
+            color: #d7f7e8;
+        }
+
+        .reveal-panel.is-caught {
+            border-color: rgba(248, 113, 113, 0.42);
+        }
+
+        .reveal-panel__tag {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 5px 13px;
+            border-radius: 999px;
+            font-size: .66rem;
+            font-weight: 700;
+            letter-spacing: 1.1px;
+            text-transform: uppercase;
+            border: 1px solid rgba(56, 233, 146, 0.4);
+            background: rgba(52, 211, 153, 0.12);
+            color: #6ef0b4;
+        }
+
+        .reveal-panel.is-caught .reveal-panel__tag {
+            border-color: rgba(248, 113, 113, 0.5);
+            background: rgba(248, 113, 113, 0.13);
+            color: #ff9e94;
+        }
+
+        .reveal-panel h2 {
+            margin: 0 0 12px;
+            font-size: 1.18rem;
+            font-weight: 700;
+            line-height: 1.35;
+            color: #eafff5;
+        }
+
+        .reveal-panel p {
+            margin: 0 auto 14px;
+            max-width: 44ch;
+            font-family: var(--font-ui);
+            font-size: .89rem;
+            line-height: 1.72;
+            color: #9fc7b6;
+        }
+
+        .reveal-panel__punch {
+            font-family: var(--font-code) !important;
+            font-size: .81rem !important;
+            font-style: italic;
+            padding-top: 14px;
+            border-top: 1px dashed rgba(56, 233, 146, 0.24);
+            color: #7fb69e !important;
+        }
+
+        .reveal-panel__actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .reveal-panel__btn {
+            border: 1px solid rgba(56, 233, 146, 0.4);
+            background: rgba(52, 211, 153, 0.1);
+            color: #d7f7e8;
+            border-radius: 999px;
+            padding: 11px 19px;
+            font-family: var(--font-code);
+            font-size: .74rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color .2s ease, transform .2s ease, border-color .2s ease;
+        }
+
+        .reveal-panel__btn:hover {
+            transform: translateY(-2px);
+            background: rgba(52, 211, 153, 0.2);
+            border-color: rgba(56, 233, 146, 0.7);
+        }
+
+        .reveal-panel__btn.is-primary {
+            background: linear-gradient(135deg, #34d399, #22c55e);
+            border-color: transparent;
+            color: #04120a;
+        }
+
+        /* --- Effet glitch au moment du clic --- */
+
+        .boot-screen.is-glitching .terminal,
+        .boot-screen.is-glitching .trap__box {
+            animation: glitchShake .42s steps(2, end) 2;
+        }
+
+        @keyframes glitchShake {
+
+            0% { transform: translate(0, 0); filter: none; }
+            25% { transform: translate(-5px, 2px); filter: hue-rotate(75deg) saturate(2.4); }
+            50% { transform: translate(4px, -3px); filter: invert(1); }
+            75% { transform: translate(-3px, -1px); filter: hue-rotate(-60deg); }
+            100% { transform: translate(0, 0); filter: none; }
+        }
+
+        @media (max-width: 560px) {
+
+            .trap__body {
+                padding: 18px 16px 15px;
+            }
+
+            .reveal-panel {
+                padding: 22px 18px 20px;
+            }
+
+            .reveal-panel h2 {
+                font-size: 1.04rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .trap__icon,
+            .trap__cta {
+                animation: none;
+            }
+
+            .boot-screen.is-glitching .terminal,
+            .boot-screen.is-glitching .trap__box {
+                animation: none;
+            }
+
+            .trap,
+            .trap__box {
+                transition: none;
+            }
+        }
+
         @media (max-width: 1024px) {
             .layout {
                 grid-template-columns: 1fr;
@@ -796,7 +1659,7 @@
 
 <body>
     <div id="boot-screen" class="boot-screen" aria-live="polite">
-        <div class="terminal">
+        <div id="boot-terminal" class="terminal">
             <div class="terminal-head">
                 <span class="terminal-dot"></span>
                 <span class="terminal-dot"></span>
@@ -806,6 +1669,35 @@
             <div class="terminal-body">
                 <ul id="boot-log" class="boot-log"></ul>
                 <div class="boot-progress"><span id="boot-progress"></span></div>
+                <div class="boot-skip">
+                    <button type="button" id="boot-skip">passer l'intro →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fausse alerte : le premier test, avant meme d'avoir vu le CV -->
+        <div id="trap" class="trap" role="dialog" aria-modal="true" aria-labelledby="trap-title" aria-hidden="true">
+            <div class="trap__box">
+                <div class="trap__bar">
+                    <span>⚠ Centre de sécurité — Analyse rapide</span>
+                    <button type="button" class="trap__close" id="trap-close" aria-label="Fermer l'alerte">✕</button>
+                </div>
+                <div class="trap__body">
+                    <div class="trap__icon" aria-hidden="true">🛑</div>
+                    <p class="trap__title" id="trap-title">3 menaces détectées sur cet appareil</p>
+                    <p class="trap__text">
+                        Une analyse automatique a identifié des fichiers à risque.
+                        Vos données personnelles pourraient être exposées.
+                    </p>
+                    <ul class="trap__list">
+                        <li>Trojan.Win32.Generic <span>critique</span></li>
+                        <li>Adware.Tracking.Cookie <span>élevé</span></li>
+                        <li>PUP.Optional.Toolbar <span>moyen</span></li>
+                    </ul>
+                    <button type="button" class="trap__cta" id="trap-cta">Nettoyer maintenant</button>
+                    <p class="trap__timer">Analyse expirée dans <b id="trap-timer">08</b> s</p>
+                    <button type="button" class="trap__ignore" id="trap-ignore">Ignorer cette alerte</button>
+                </div>
             </div>
         </div>
     </div>
@@ -819,7 +1711,7 @@
                     <div class="avatar">BM</div>
                     <div>
                         <h1>BILAL MEDJ</h1>
-                        <p id="identity-subtitle">Master cybersecurite | profil technique</p>
+                        <p id="identity-subtitle">Master 2 Cybersécurité | recherche alternance</p>
                     </div>
                 </div>
                 <button id="mode-toggle" class="mode-toggle" type="button" aria-pressed="true" aria-label="Changer le theme">
@@ -837,9 +1729,11 @@
                 <section class="card reveal">
                     <h2 class="section-title"><span class="dot"></span>Profil</h2>
                     <p class="profile-copy muted">
-                        Master cybersecurite a l'UPHF, je recherche une alternance ou un stage en informatique.
-                        Passionne par la securite des reseaux et le developpement, je mobilise rigueur technique,
-                        ecoute et polyvalence pour relever des defis concrets.
+                        Étudiant en Master 2 Cybersécurité à l'UPHF après un M1 validé et une Licence Informatique,
+                        je recherche une alternance en cybersécurité ou en développement sécurisé.
+                        Un stage full-stack et trois ans de conseil client m'ont appris à écrire du code propre
+                        autant qu'à traduire un besoin métier. Je mobilise rigueur technique, écoute et polyvalence
+                        pour relever des défis concrets.
                     </p>
 
                     <div class="contact-list">
@@ -868,7 +1762,7 @@
                     <div class="profile-actions">
                         <a class="btn is-primary" href="assets/cv/cv_medj_bilal.pdf" download>
                             <span>⬇</span>
-                            <span>Telecharger CV PDF</span>
+                            <span>Télécharger CV PDF</span>
                         </a>
                         <a class="btn" href="index.html">
                             <span>↩</span>
@@ -877,13 +1771,18 @@
                     </div>
 
                     <div id="personal-info" class="personal-info"></div>
+
+                    <a class="game__teaser" href="#game">
+                        <span aria-hidden="true">🎯</span>
+                        <span>Sauriez-vous repérer l'arnaque ? 90 s en bas de page</span>
+                    </a>
                 </section>
 
                 <section class="card reveal">
-                    <h2 class="section-title"><span class="dot"></span>Competences</h2>
+                    <h2 class="section-title"><span class="dot"></span>Compétences</h2>
                     <div class="chips-group">
                         <div>
-                            <h3>Developpement</h3>
+                            <h3>Développement</h3>
                             <div id="skills-prog" class="chips"></div>
                         </div>
                         <div>
@@ -891,7 +1790,7 @@
                             <div id="skills-web" class="chips"></div>
                         </div>
                         <div>
-                            <h3>Cybersecurite</h3>
+                            <h3>Cybersécurité</h3>
                             <div id="skills-cyber" class="chips"></div>
                         </div>
                         <div>
@@ -899,25 +1798,70 @@
                             <div id="skills-tools" class="chips"></div>
                         </div>
                         <div>
-                            <h3>Base de donnees</h3>
+                            <h3>Base de données</h3>
                             <div id="skills-db" class="chips"></div>
                         </div>
                         <div>
-                            <h3>Systemes</h3>
+                            <h3>Systèmes</h3>
                             <div id="skills-os" class="chips"></div>
                         </div>
                     </div>
+
+                    <h3 class="lang-heading">Langues</h3>
+                    <div id="languages-list" class="lang-list"></div>
                 </section>
             </aside>
 
             <section class="content">
                 <section class="reveal">
-                    <h2 class="section-title"><span class="dot"></span>Experiences</h2>
+                    <h2 class="section-title"><span class="dot"></span>Expériences</h2>
                     <div id="experience-list" class="timeline"></div>
                     <h2 class="section-title section-title--compact"><span class="dot"></span>Parcours</h2>
                     <div id="education-list" class="education-grid"></div>
-                    <h2 class="section-title section-title--tiny"><span class="dot"></span>Centres d'interet</h2>
+                    <h2 class="section-title section-title--compact"><span class="dot"></span>Projets</h2>
+                    <div id="projects-list" class="projects-grid"></div>
+
+                    <h2 class="section-title section-title--tiny"><span class="dot"></span>Centres d'intérêt</h2>
                     <div id="interests-list" class="chips"></div>
+                </section>
+
+                <section id="game" class="game reveal" aria-labelledby="game-title">
+                    <h2 class="section-title" id="game-title"><span class="dot"></span>Repère l'arnaque</h2>
+                    <p class="game__intro">
+                        Six messages, un seul réflexe à avoir : repérer lesquels sont des tentatives de
+                        phishing. C'est exactement le type d'analyse que je pratique en Master cybersécurité,
+                        et le genre d'attaque qui représente aujourd'hui la majorité des intrusions en entreprise.
+                        Comptez 90 secondes.
+                    </p>
+
+                    <div class="game__board">
+                        <div class="game__head">
+                            <span class="game__step" id="game-step">Prêt à commencer</span>
+                            <span class="game__score">
+                                <span class="game__score-dot" aria-hidden="true"></span>
+                                <span id="game-score">Score : 0 / 6</span>
+                            </span>
+                        </div>
+                        <div class="game__progress" role="progressbar" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" aria-label="Progression du quiz">
+                            <span id="game-progress"></span>
+                        </div>
+                        <div class="game__stage" id="game-stage" aria-live="polite">
+                            <div class="game__splash">
+                                <h3>Sauriez-vous repérer l'arnaque ?</h3>
+                                <p>
+                                    Un employé sur trois clique sur un lien de phishing bien construit.
+                                    Voyons de quel côté vous tombez : aucune inscription, aucun clavier,
+                                    juste six messages et votre instinct.
+                                </p>
+                                <div class="game__actions">
+                                    <button class="btn is-primary" type="button" id="game-start">
+                                        <span>▶</span>
+                                        <span>Lancer le test</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
         </main>
@@ -933,51 +1877,83 @@
 
             var CV_DATA = {
                 profile: {
-                    birth: "28 decembre 2001",
-                    location: "Douai, France",
-                    vehicle: "Oui",
-                    license: "Permis B"
+                    location: "Douai, Hauts-de-France",
+                    mobility: "Permis B — véhiculé",
+                    availability: "Alternance dès septembre 2026",
+                    rhythm: "Rythme : à confirmer avec l'UPHF"
                 },
                 skills: {
                     prog: ["C", "Java", "JavaScript", "PHP", "Python", "Bash"],
                     web: ["HTML5", "CSS3", "Bootstrap", "Tailwind CSS", "Node.js"],
-                    cyber: ["Linux", "TCP/IP", "SOC", "Durcissement", "OWASP"],
+                    cyber: ["Linux", "Réseaux TCP/IP", "OWASP Top 10", "Analyse de vulnérabilités", "Sécurisation web", "Cryptographie"],
                     tools: ["Git", "VS Code", "Eclipse", "Pack Office"],
                     db: ["SQL", "MySQL"],
                     os: ["Windows", "Linux"]
                 },
+                languages: [
+                    { name: "Français", level: "Langue maternelle" },
+                    { name: "Anglais", level: "Niveau B2 — lecture technique courante" }
+                ],
+                projects: [
+                    {
+                        name: "Forum d'entraide aux devoirs",
+                        desc: "Plateforme communautaire avec authentification, gestion des rôles, catégories et modération. Protection contre les injections SQL et le XSS.",
+                        tags: ["PHP", "MySQL", "JavaScript", "OWASP"]
+                    },
+                    {
+                        name: "Boutique e-commerce",
+                        desc: "Site marchand complet : catalogue, panier persistant, tunnel de commande et back-office de gestion des stocks.",
+                        tags: ["PHP", "MySQL", "JavaScript", "CSS3"]
+                    },
+                    {
+                        name: "Comparateur de jeux vidéo",
+                        desc: "Application web interrogeant une API externe pour comparer des fiches de jeux, avec filtres et tri en temps réel.",
+                        tags: ["JavaScript", "API REST", "Bootstrap"]
+                    },
+                    {
+                        name: "Ce CV interactif",
+                        desc: "Page autonome sans dépendance externe : séquence de démarrage, simulation de scareware et quiz de sensibilisation au phishing.",
+                        tags: ["JavaScript", "CSS3", "Accessibilité"]
+                    }
+                ],
                 experience: [
                     {
-                        role: "Developpeur Web (Stage)",
+                        role: "Développeur Web (Stage)",
                         company: "Mission Locale du Douaisis - Douai, France",
                         period: "Mars 2025 - Mai 2025",
-                        desc: "Developpement full-stack (front-end et back-end), analyse des besoins utilisateurs, correction de bugs et redaction de tests.",
-                        tags: ["Full-Stack", "Qualite", "Git"],
+                        desc: "Développement full-stack (front-end et back-end), analyse des besoins utilisateurs, correction de bugs et rédaction de tests.",
+                        tags: ["Full-Stack", "Qualité", "Git"],
                         current: false
                     },
                     {
                         role: "Conseiller de Vente",
                         company: "Leroy Merlin - Douai, France",
-                        period: "2022 - Present",
-                        desc: "Conseil technique en plomberie/electricite, suivi des stocks, mise en rayon et optimisation de la disponibilite produit.",
-                        tags: ["Communication", "Pedagogie", "Vente"],
+                        period: "2022 - Présent",
+                        desc: "Conseil technique en plomberie/électricité, suivi des stocks, mise en rayon et optimisation de la disponibilité produit.",
+                        tags: ["Communication", "Pédagogie", "Vente"],
                         current: true
                     },
                     {
-                        role: "Experiences complementaires (jobs etudiants / interim)",
+                        role: "Expériences complémentaires (jobs étudiants / intérim)",
                         company: "Hauts-de-France",
                         period: "2019 - 2024",
-                        desc: "Logistique (inventaires, preparation de commandes, manutention) et vente/services (restauration rapide, livraison, accueil, caisse).",
+                        desc: "Logistique (inventaires, préparation de commandes, manutention) et vente/services (restauration rapide, livraison, accueil, caisse).",
                         tags: ["Polyvalence", "Rigueur", "Gestion du stress"],
                         current: false
                     }
                 ],
                 education: [
                     {
-                        degree: "Master Cybersecurite (M1)",
+                        degree: "Master Cybersécurité (M2)",
                         school: "UPHF - Valenciennes",
-                        period: "2025 - Present (M1 en cours)",
+                        period: "2026 - 2027 (en cours)",
                         current: true
+                    },
+                    {
+                        degree: "Master Cybersécurité (M1) — validé",
+                        school: "UPHF - Valenciennes",
+                        period: "2025 - 2026",
+                        current: false
                     },
                     {
                         degree: "Licence Informatique",
@@ -986,28 +1962,27 @@
                         current: false
                     },
                     {
-                        degree: "Baccalaureat technologique STI2D",
-                        school: "Lycee Edmond Labbe - Douai, France",
+                        degree: "Baccalauréat technologique STI2D",
+                        school: "Lycée Edmond Labbé - Douai, France",
                         period: "2019",
-                        current: false
-                    },
-                    {
-                        degree: "Brevet des colleges",
-                        school: "College Gayant - Frais Marais, France",
-                        period: "2016",
                         current: false
                     }
                 ],
-                interests: ["Veille technologique", "Sport", "Voyage"]
+                interests: [
+                    "Veille cybersécurité (ANSSI, Zataz, Hack The Box)",
+                    "Projets personnels de développement",
+                    "Sport en salle",
+                    "Voyages et découverte culturelle"
+                ]
             };
 
             var BOOT_LOGS = [
-                "Initialisation du systeme...",
+                "Initialisation du système...",
                 "Connexion aux serveurs...",
-                "Chargement des modules de securite...",
-                "Verification des acces: BILAL_MEDJ",
-                "Statut: Master cybersecurite detecte.",
-                "Acces autorise. Bienvenue."
+                "Chargement des modules de sécurité...",
+                "Vérification des accès : BILAL_MEDJ",
+                "Statut : Master 2 Cybersécurité détecté.",
+                "Accès autorisé. Bienvenue."
             ];
 
             var app = document.getElementById("app");
@@ -1035,15 +2010,43 @@
             function fillPersonalInfo() {
                 var info = CV_DATA.profile;
                 var rows = [
-                    ["Ne le", info.birth],
+                    ["Disponibilité", info.availability],
                     ["Localisation", info.location],
-                    ["Vehicule personnel", info.vehicle],
-                    ["Permis", info.license]
+                    ["Mobilité", info.mobility]
                 ];
                 var html = rows.map(function (row) {
                     return '<div class="personal-info__item"><span class="personal-info__label">' + row[0] + '</span><span class="personal-info__value">' + row[1] + "</span></div>";
                 }).join("");
                 safeSetHtml("personal-info", html);
+            }
+
+            function fillLanguages() {
+                var html = CV_DATA.languages.map(function (lang) {
+                    return [
+                        '<div class="lang-item">',
+                        '<span class="lang-item__name">' + lang.name + "</span>",
+                        '<span class="lang-item__level">' + lang.level + "</span>",
+                        "</div>"
+                    ].join("");
+                }).join("");
+                safeSetHtml("languages-list", html);
+            }
+
+            function fillProjects() {
+                var html = CV_DATA.projects.map(function (project) {
+                    return [
+                        '<article class="project-card-cv">',
+                        '<h3 class="project-card-cv__name">' + project.name + "</h3>",
+                        '<p class="project-card-cv__desc">' + project.desc + "</p>",
+                        '<div class="chips">',
+                        project.tags.map(function (tag) {
+                            return '<span class="chip">' + tag + "</span>";
+                        }).join(""),
+                        "</div>",
+                        "</article>"
+                    ].join("");
+                }).join("");
+                safeSetHtml("projects-list", html);
             }
 
             function fillSkills() {
@@ -1100,6 +2103,8 @@
             }
 
             fillPersonalInfo();
+            fillLanguages();
+            fillProjects();
             fillSkills();
             fillExperience();
             fillEducation();
@@ -1112,11 +2117,11 @@
                 modeText.textContent = isHacker ? "ACTIVER MODE CLAIR" : "ACTIVER MODE CYBER";
                 modeHint.textContent = isHacker ? "Mode cyber actif" : "Mode clair actif";
                 modeIcon.textContent = isHacker ? "☀" : "⚡";
-                identitySubtitle.textContent = isHacker ? "Master cybersecurite | profil technique" : "Master cybersecurite | version claire";
-                localStorage.setItem("cv-theme-mode", isHacker ? "hacker" : "clean");
+                identitySubtitle.textContent = isHacker ? "Master cybersécurité | profil technique" : "Master cybersécurité | version claire";
+                localStorage.setItem("cv-thème-mode", isHacker ? "hacker" : "clean");
             }
 
-            var savedMode = localStorage.getItem("cv-theme-mode");
+            var savedMode = localStorage.getItem("cv-thème-mode");
             applyTheme(savedMode !== "clean");
 
             modeToggle.addEventListener("click", function () {
@@ -1175,28 +2180,478 @@
                 });
             }
 
+            /* ========================================================
+               MINI-JEU : REPÈRE L'ARNAQUE
+               ======================================================== */
+
+            var GAME_ROUNDS = [
+                {
+                    channel: "E-mail",
+                    context: "Reçu un mardi a 03h12",
+                    from: "Service Comptabilité <compta@entrepr1se-groupe.com>",
+                    subject: "URGENT : validation virement avant 9h",
+                    link: "https://entrepr1se-groupe.com/valider-paiement",
+                    body: "Bonjour,\n\nLe Directeur Financier m'a demande de traiter un virement fournisseur de 48 750 EUR avant l'ouverture. Merci de valider via le lien ci-dessous, il est en déplacement et injoignable.\n\nMerci de ne pas en parler a l'equipe, l'opération est confidentielle.",
+                    phishing: true,
+                    verdict: "Fraude au president, manuel scolaire",
+                    flags: [
+                        "Le domaine entrepr1se-groupe.com remplace le « i » par un « 1 » : c'est du typosquatting, invisible en lecture rapide.",
+                        "Urgence + autorité + confidentialite : les trois leviers de pression classiques, réunis dans quatre lignes.",
+                        "Un dirigeant « injoignable » est précisément ce qui empêche la vérification par un second canal.",
+                        "Envoye a 03h12, quand personne n'est là pour poser une question."
+                    ],
+                    punchline: "Un vrai directeur financier ne demande jamais la discretion. Il demande un devis, trois relances et une réunion.",
+                    reflex: "Le bon réflexe : rappeler la personne sur un numéro déjà connu, jamais celui indique dans le message."
+                },
+                {
+                    channel: "SMS",
+                    context: "Reçu deux jours après une commande réelle",
+                    from: "Expéditeur : +33 7 56 XX XX XX",
+                    subject: "Colis en attente de livraison",
+                    link: "https://suivi-colis-fr.info/redirect?id=8842",
+                    body: "Votre colis n'a pas pu être livré. Des frais de dédouanement de 1,99 EUR restent dus. Reprogrammez la livraison sous 48h ou le colis sera retourné.",
+                    phishing: true,
+                    verdict: "Smishing, et le montant est le piege",
+                    flags: [
+                        "1,99 EUR : un montant assez dérisoire pour qu'on paie sans réfléchir. L'objectif n'est pas la somme, c'est le numéro de carte.",
+                        "Le domaine .info avec un nom générique n'appartient a aucun transporteur réel.",
+                        "Le compte à rebours de 48h coupe le temps de vérification.",
+                        "L'attaque fonctionne parce qu'elle arrive après une vraie commande : les fraudeurs jouent la probabilité, pas la connaissance."
+                    ],
+                    punchline: "Aucun transporteur n'a jamais réussi a livrer un colis à l'heure, mais tous savent envoyer un SMS en trente secondes.",
+                    reflex: "Le bon réflexe : ouvrir soi-même le site du transporteur et coller le numéro de suivi, sans toucher au lien."
+                },
+                {
+                    channel: "E-mail",
+                    context: "Reçu après une connexion depuis un nouveau téléphone",
+                    from: "Google <no-reply@accounts.google.com>",
+                    subject: "Nouvelle connexion sur votre compte",
+                    link: "",
+                    body: "Votre compte Google vient d'être utilisé pour se connecter depuis un nouvel appareil.\n\nAppareil : Pixel 8\nLieu approximatif : Lille, France\n\nSi c'était vous, aucune action n'est nécessaire. Sinon, vérifiez votre activite depuis les paramètres de sécurité de votre compte.",
+                    phishing: false,
+                    verdict: "Message légitime",
+                    flags: [
+                        "Le domaine accounts.google.com est le domaine officiel, sans caractère substitué ni sous-domaine suspect.",
+                        "Aucune urgence, aucune menace, aucun délai : le ton est purement informatif.",
+                        "Le message ne demande ni mot de passe, ni code, ni pièce jointe.",
+                        "Il renvoie vers les paramètres du compte plutôt que vers un lien de connexion : c'est la signature d'une vraie notification."
+                    ],
+                    punchline: "Le message le plus rassurant d'une boîte mail est souvent celui qui ne vous demande absolument rien.",
+                    reflex: "Le bon réflexe : même légitime, on verifie l'activite en tapant l'adresse du service à la main."
+                },
+                {
+                    channel: "E-mail",
+                    context: "Reçu pendant les congés de la DSI",
+                    from: "Support informatique <it-support@votre-entreprise.com>",
+                    subject: "Expiration de votre mot de passe dans 24h",
+                    link: "http://votre-entreprise.com.session-verify.net/login",
+                    body: "Votre mot de passe expire dans 24 heures. Sans action de votre part, votre accès a la messagerie sera suspendu.\n\nCliquez pour confirmer vos identifiants actuels et prolonger votre accès.",
+                    phishing: true,
+                    verdict: "Vol d'identifiants par page clonée",
+                    flags: [
+                        "Le vrai domaine est session-verify.net : tout ce qui precede n'est qu'un sous-domaine déguisé. C'est l'astuce la plus rentable du phishing.",
+                        "Le lien est en http, sans chiffrement : les identifiants circuleraient en clair.",
+                        "Aucun service informatique ne demande de « confirmer son mot de passe actuel ». Il le réinitialise.",
+                        "Envoye pendant les congés de l'equipe IT, quand personne ne peut confirmer."
+                    ],
+                    punchline: "Un service informatique qui vous ecrit pour vous rendre service en 24h, c'est déjà statistiquement suspect.",
+                    reflex: "Le bon réflexe : lire un domaine de droite a gauche, en partant du dernier point avant la premiere barre oblique."
+                },
+                {
+                    channel: "LinkedIn",
+                    context: "Message d'un recruteur au profil créé ce mois-ci",
+                    from: "Camille D., Talent Acquisition",
+                    subject: "Opportunité cybersécurité - 65k pour un profil junior",
+                    link: "Pièce jointe : Fiche_de_poste_Confidentiel.docx (activer les macros)",
+                    body: "Bonjour Bilal,\n\nVotre profil correspond parfaitement a un poste que nous ouvrons. Salaire 65k, télétravail intégral, aucune expérience requise.\n\nLa fiche de poste détaillée est en pièce jointe. Merci d'activer le contenu pour l'afficher correctement.",
+                    phishing: true,
+                    verdict: "Pièce jointe piégée",
+                    flags: [
+                        "« Activer les macros » est la demande la plus dangereuse d'un document Office : c'est un feu vert pour exécuter du code.",
+                        "Une offre disproportionnée par rapport au profil visé sert a court-circuiter l'esprit critique.",
+                        "Profil de recruteur créé récemment, sans historique ni réseau crédible.",
+                        "Le mot « Confidentiel » dans un nom de fichier est un appel à la curiosité, pas une mesure de sécurité."
+                    ],
+                    punchline: "Aucune fiche de poste au monde n'a jamais eu besoin d'exécuter du code pour afficher un intitulé et un salaire.",
+                    reflex: "Le bon réflexe : ouvrir les documents inconnus dans une visionneuse en ligne, jamais avec les macros actives."
+                },
+                {
+                    channel: "E-mail",
+                    context: "Reçu après une demande de réinitialisation faite par vous",
+                    from: "GitHub <noreply@github.com>",
+                    subject: "Réinitialisation de votre mot de passe",
+                    link: "",
+                    body: "Nous avons reçu une demande de réinitialisation de mot de passe pour le compte MjBilaal.\n\nLe lien de réinitialisation expire dans 1 heure et ne peut être utilisé qu'une fois.\n\nSi vous n'êtes pas à l'origine de cette demande, ignorez ce message : votre mot de passe reste inchangé.",
+                    phishing: false,
+                    verdict: "Message légitime",
+                    flags: [
+                        "Le message arrive après une action que vous avez initiee : le contexte concorde.",
+                        "Il nomme précisément le compte concerné, sans formule vague du type « cher utilisateur ».",
+                        "L'expiration en 1 heure est une mesure de sécurité réelle, pas une pression commerciale.",
+                        "La phrase de sortie est desamorcante : ignorer le message n'a aucune conséquence. Un attaquant écrit l'inverse."
+                    ],
+                    punchline: "La différence entre une urgence légitime et une arnaque tient souvent a une phrase : « si ce n'est pas vous, ne faites rien ».",
+                    reflex: "Le bon réflexe : un délai court n'est suspect que s'il s'accompagne d'une menace."
+                }
+            ];
+
+            var VERDICTS = [
+                { min: 6, label: "Analyste en puissance", text: "Six sur six. Vous repérez les signaux faibles mieux que la plupart des filtres anti-spam. Si vous recrutez, on devrait se parler." },
+                { min: 5, label: "Vigilance solide", text: "Un seul passage entre les mailles. En conditions réelles, un doute suffit a déclencher la bonne vérification." },
+                { min: 3, label: "Bon instinct, à affûter", text: "La moitie des attaques repérées. C'est déjà mieux que la moyenne en entreprise, et exactement ce que la sensibilisation vient corriger." },
+                { min: 0, label: "Le facteur humain, en direct", text: "Rassurez-vous : c'est le résultat le plus courant, et c'est précisément pourquoi la cybersécurité recrute. Aucune technologie ne compense un clic." }
+            ];
+
+            var gameStage = document.getElementById("game-stage");
+            var gameStepEl = document.getElementById("game-step");
+            var gameScoreEl = document.getElementById("game-score");
+            var gameProgressEl = document.getElementById("game-progress");
+            var gameProgressBar = gameProgressEl ? gameProgressEl.parentNode : null;
+            var gameIndex = 0;
+            var gameScore = 0;
+            var gameResults = [];
+
+            function escapeHtml(value) {
+                return String(value)
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;");
+            }
+
+            function updateGameHeader() {
+                if (!gameStepEl) { return; }
+                gameStepEl.textContent = "Message " + (gameIndex + 1) + " sur " + GAME_ROUNDS.length;
+                gameScoreEl.textContent = "Score : " + gameScore + " / " + GAME_ROUNDS.length;
+                gameProgressEl.style.width = (gameIndex / GAME_ROUNDS.length) * 100 + "%";
+                if (gameProgressBar) {
+                    gameProgressBar.setAttribute("aria-valuenow", String(gameIndex));
+                }
+            }
+
+            function renderRound() {
+                var round = GAME_ROUNDS[gameIndex];
+                updateGameHeader();
+
+                var linkHtml = round.link
+                    ? '<div class="game__link">' + escapeHtml(round.link) + "</div>"
+                    : "";
+
+                gameStage.innerHTML = [
+                    '<div class="game__meta">',
+                    '<span class="game__channel">' + escapeHtml(round.channel) + "</span>",
+                    '<span class="game__context">' + escapeHtml(round.context) + "</span>",
+                    "</div>",
+                    '<div class="game__message">',
+                    '<div class="game__message-head">',
+                    "<div><b>De :</b> " + escapeHtml(round.from) + "</div>",
+                    "<div><b>Objet :</b> " + escapeHtml(round.subject) + "</div>",
+                    "</div>",
+                    '<div class="game__message-body">' + escapeHtml(round.body) + linkHtml + "</div>",
+                    "</div>",
+                    '<div class="game__choices">',
+                    '<button class="game__choice" type="button" data-answer="safe">✓ Message légitime</button>',
+                    '<button class="game__choice" type="button" data-answer="phish">⚠ Tentative de phishing</button>',
+                    "</div>",
+                    '<p class="game__hint">Aucun lien n\'est réellement cliquable. Vous ne risquez rien, promis.</p>'
+                ].join("");
+
+                Array.prototype.forEach.call(
+                    gameStage.querySelectorAll(".game__choice"),
+                    function (button) {
+                        button.addEventListener("click", function () {
+                            answerRound(button.getAttribute("data-answer") === "phish", button);
+                        });
+                    }
+                );
+            }
+
+            function answerRound(saidPhishing, pickedButton) {
+                var round = GAME_ROUNDS[gameIndex];
+                var correct = saidPhishing === round.phishing;
+
+                if (correct) { gameScore += 1; }
+                gameResults.push(correct);
+
+                Array.prototype.forEach.call(
+                    gameStage.querySelectorAll(".game__choice"),
+                    function (button) { button.disabled = true; }
+                );
+                pickedButton.classList.add("is-picked", correct ? "is-picked-right" : "is-picked-wrong");
+
+                gameScoreEl.textContent = "Score : " + gameScore + " / " + GAME_ROUNDS.length;
+
+                var isLast = gameIndex === GAME_ROUNDS.length - 1;
+                var feedback = document.createElement("div");
+                feedback.className = "game__feedback " + (correct ? "is-right" : "is-wrong");
+                feedback.innerHTML = [
+                    '<p class="game__feedback-title">',
+                    (correct ? "✓ Bien vu — " : "✕ Raté — ") + escapeHtml(round.verdict),
+                    "</p>",
+                    '<ul class="game__flags">',
+                    round.flags.map(function (flag) {
+                        return "<li>" + escapeHtml(flag) + "</li>";
+                    }).join(""),
+                    "</ul>",
+                    '<p class="game__punchline">' + escapeHtml(round.punchline) + "</p>",
+                    '<p class="game__punchline" style="font-style:normal;border-top:0;padding-top:0;margin-bottom:16px;">' + escapeHtml(round.reflex) + "</p>",
+                    '<div class="game__next">',
+                    '<button class="btn is-primary" type="button" id="game-next">',
+                    "<span>" + (isLast ? "★" : "→") + "</span>",
+                    "<span>" + (isLast ? "Voir mon résultat" : "Message suivant") + "</span>",
+                    "</button>",
+                    "</div>"
+                ].join("");
+
+                gameStage.appendChild(feedback);
+
+                var nextButton = document.getElementById("game-next");
+                nextButton.addEventListener("click", function () {
+                    gameIndex += 1;
+                    if (gameIndex >= GAME_ROUNDS.length) {
+                        renderVerdict();
+                    } else {
+                        renderRound();
+                    }
+                });
+                nextButton.focus();
+            }
+
+            function renderVerdict() {
+                var verdict = VERDICTS.filter(function (item) {
+                    return gameScore >= item.min;
+                })[0];
+
+                gameStepEl.textContent = "Test terminé";
+                gameProgressEl.style.width = "100%";
+                if (gameProgressBar) {
+                    gameProgressBar.setAttribute("aria-valuenow", String(GAME_ROUNDS.length));
+                }
+
+                gameStage.innerHTML = [
+                    '<div class="game__splash">',
+                    '<p class="game__verdict-score">' + gameScore + " / " + GAME_ROUNDS.length + "</p>",
+                    '<p class="game__verdict-label">' + escapeHtml(verdict.label) + "</p>",
+                    "<ul class=\"game__recap\">",
+                    gameResults.map(function (hit, i) {
+                        return '<li class="' + (hit ? "is-hit" : "is-miss") + '" title="Message ' + (i + 1) + '">' + (hit ? "✓" : "✕") + "</li>";
+                    }).join(""),
+                    "</ul>",
+                    "<p>" + escapeHtml(verdict.text) + "</p>",
+                    '<div class="game__actions">',
+                    '<button class="btn" type="button" id="game-replay"><span>↻</span><span>Rejouer</span></button>',
+                    '<a class="btn is-primary" href="mailto:bilal.medj@hotmail.fr?subject=Votre%20CV%20interactif"><span>✉</span><span>Me contacter</span></a>',
+                    "</div>",
+                    "</div>"
+                ].join("");
+
+                document.getElementById("game-replay").addEventListener("click", startGame);
+            }
+
+            function startGame() {
+                gameIndex = 0;
+                gameScore = 0;
+                gameResults = [];
+                renderRound();
+            }
+
+            function initGame() {
+                if (!gameStage) { return; }
+                var startButton = document.getElementById("game-start");
+                if (startButton) {
+                    startButton.addEventListener("click", startGame);
+                }
+            }
+
+            initGame();
+
+            /* ========================================================
+               DEMARRAGE + PIEGE DE LA FAUSSE ALERTE
+               ======================================================== */
+
+            var bootTerminal = document.getElementById("boot-terminal");
+            var skipButton = document.getElementById("boot-skip");
+            var trap = document.getElementById("trap");
+            var trapCta = document.getElementById("trap-cta");
+            var trapIgnore = document.getElementById("trap-ignore");
+            var trapClose = document.getElementById("trap-close");
+            var trapTimerEl = document.getElementById("trap-timer");
+
+            var TRAP_AT = 3;          // l'alerte surgit apres la 3e ligne de log
+            var TRAP_COUNTDOWN = 8;   // secondes avant que l'alerte se resolve seule
+
+            var bootIndex = 0;
+            var bootTimer = null;
+            var trapTimer = null;
+            var bootDone = false;
+
+            var REVEALS = {
+                caught: {
+                    tag: "Test échoué — et c'est normal",
+                    title: "Vous venez de cliquer sur une fausse alerte.",
+                    text: "Aucune analyse n'a jamais eu lieu, et votre appareil va très bien. Ce bandeau était un scareware : un faux avertissement conçu pour provoquer un clic réflexe avant toute réflexion. Le vrai piège n'était pas le bouton vert, c'était l'urgence.",
+                    punch: "Rassurez-vous : le bouton était volontairement gros, vert et rassurant. C'est exactement le budget design que les attaquants y consacrent."
+                },
+                avoided: {
+                    tag: "Test réussi",
+                    title: "Vous avez ignoré la fausse alerte.",
+                    text: "Aucun antivirus ne s'annonce par une pop-up dans un navigateur, et aucun scan légitime ne se lance sans qu'on l'ait demandé. Vous avez identifié un scareware sans même y réfléchir — c'est précisément le réflexe qu'on essaie d'installer en sensibilisation.",
+                    punch: "Le meilleur outil de cybersécurité reste une personne qui trouve qu'un bouton clignote un peu trop."
+                },
+                timeout: {
+                    tag: "Test réussi — par abstention",
+                    title: "Vous n'avez rien cliqué. C'était la bonne réponse.",
+                    text: "Face à une alerte inattendue, ne rien faire est presque toujours plus sûr que faire vite. Ce bandeau était un scareware : un faux avertissement qui mise sur l'urgence pour court-circuiter votre jugement.",
+                    punch: "L'inaction est rarement une stratégie. En sécurité, c'est une exception notable."
+                }
+            };
+
+            function stopBootTimers() {
+                if (bootTimer) { window.clearInterval(bootTimer); bootTimer = null; }
+                if (trapTimer) { window.clearInterval(trapTimer); trapTimer = null; }
+            }
+
+            function enterSite() {
+                if (bootDone) { return; }
+                bootDone = true;
+                stopBootTimers();
+                bootScreen.classList.add("is-hidden");
+                bootScreen.setAttribute("aria-hidden", "true");
+                app.setAttribute("data-ready", "true");
+                startReveal();
+                document.body.style.overflow = "";
+            }
+
+            function closeTrap() {
+                trap.classList.remove("is-open");
+                trap.setAttribute("aria-hidden", "true");
+                if (trapTimer) { window.clearInterval(trapTimer); trapTimer = null; }
+            }
+
+            function showReveal(kind) {
+                var data = REVEALS[kind];
+                var caught = kind === "caught";
+
+                closeTrap();
+
+                if (caught) {
+                    bootScreen.classList.add("is-glitching");
+                    window.setTimeout(function () {
+                        bootScreen.classList.remove("is-glitching");
+                    }, 900);
+                }
+
+                bootTerminal.innerHTML = [
+                    '<div class="reveal-panel' + (caught ? " is-caught" : "") + '">',
+                    '<span class="reveal-panel__tag">' + data.tag + "</span>",
+                    "<h2>" + data.title + "</h2>",
+                    "<p>" + data.text + "</p>",
+                    '<p class="reveal-panel__punch">' + data.punch + "</p>",
+                    '<div class="reveal-panel__actions">',
+                    '<button type="button" class="reveal-panel__btn is-primary" id="reveal-enter">Découvrir mon CV →</button>',
+                    '<button type="button" class="reveal-panel__btn" id="reveal-quiz">Passer le test complet</button>',
+                    "</div>",
+                    "</div>"
+                ].join("");
+
+                bootTerminal.classList.remove("terminal");
+
+                var enterBtn = document.getElementById("reveal-enter");
+                enterBtn.addEventListener("click", enterSite);
+                enterBtn.focus();
+
+                document.getElementById("reveal-quiz").addEventListener("click", function () {
+                    enterSite();
+                    window.setTimeout(function () {
+                        var startBtn = document.getElementById("game-start");
+                        if (startBtn) { startBtn.click(); }
+
+                        var section = document.getElementById("game");
+                        if (section && typeof section.scrollIntoView === "function") {
+                            section.scrollIntoView({ behavior: "smooth", block: "start" });
+                        }
+                    }, 420);
+                });
+            }
+
+            function openTrap() {
+                if (bootDone) { return; }
+                trap.classList.add("is-open");
+                trap.setAttribute("aria-hidden", "false");
+                trapIgnore.focus();
+
+                var left = TRAP_COUNTDOWN;
+                trapTimerEl.textContent = left < 10 ? "0" + left : String(left);
+
+                trapTimer = window.setInterval(function () {
+                    left -= 1;
+                    trapTimerEl.textContent = left < 10 ? "0" + left : String(left);
+                    if (left <= 0) {
+                        window.clearInterval(trapTimer);
+                        trapTimer = null;
+                        showReveal("timeout");
+                    }
+                }, 1000);
+            }
+
             function runBootSequence() {
-                var index = 0;
-                var timer = window.setInterval(function () {
-                    if (index >= BOOT_LOGS.length) {
-                        window.clearInterval(timer);
-                        window.setTimeout(function () {
-                            bootScreen.classList.add("is-hidden");
-                            app.setAttribute("data-ready", "true");
-                            startReveal();
-                        }, 460);
+                document.body.style.overflow = "hidden";
+
+                bootTimer = window.setInterval(function () {
+                    if (bootIndex >= BOOT_LOGS.length) {
+                        window.clearInterval(bootTimer);
+                        bootTimer = null;
+                        window.setTimeout(enterSite, 460);
                         return;
                     }
 
                     var line = document.createElement("li");
-                    line.textContent = BOOT_LOGS[index];
+                    line.textContent = BOOT_LOGS[bootIndex];
                     bootLog.appendChild(line);
-                    index += 1;
-                    bootProgress.style.width = String((index / BOOT_LOGS.length) * 100) + "%";
+                    bootIndex += 1;
+                    bootProgress.style.width = String((bootIndex / BOOT_LOGS.length) * 100) + "%";
+
+                    // L'alerte surgit en plein chargement, quand on ne l'attend pas
+                    if (bootIndex === TRAP_AT) {
+                        window.clearInterval(bootTimer);
+                        bootTimer = null;
+                        window.setTimeout(openTrap, 520);
+                    }
                 }, 360);
             }
 
-            runBootSequence();
+            if (trapCta) {
+                trapCta.addEventListener("click", function () { showReveal("caught"); });
+                trapIgnore.addEventListener("click", function () { showReveal("avoided"); });
+                trapClose.addEventListener("click", function () { showReveal("avoided"); });
+            }
+
+            if (skipButton) {
+                skipButton.addEventListener("click", enterSite);
+            }
+
+            // Echap ferme l'alerte : c'est aussi le bon reflexe
+            document.addEventListener("keydown", function (event) {
+                if (event.key !== "Escape" && event.keyCode !== 27) { return; }
+                if (trap.classList.contains("is-open")) {
+                    showReveal("avoided");
+                } else if (!bootDone) {
+                    enterSite();
+                }
+            });
+
+            // Sans animation ni JS complet, on n'impose rien : le CV s'affiche
+            if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                BOOT_LOGS.forEach(function (text) {
+                    var line = document.createElement("li");
+                    line.textContent = text;
+                    bootLog.appendChild(line);
+                });
+                bootProgress.style.width = "100%";
+                window.setTimeout(openTrap, 400);
+            } else {
+                runBootSequence();
+            }
         })();
     </script>
 </body>

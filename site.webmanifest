@@ -1,0 +1,16 @@
+{
+  "name": "MEDJ Bilal — Portfolio",
+  "short_name": "B. MEDJ",
+  "description": "Portfolio de MEDJ Bilal, Master Cybersécurité et développeur web full-stack.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    { "src": "/assets/img/meta/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/meta/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/img/meta/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
