@@ -28,14 +28,14 @@
     <meta property="og:title" content="MEDJ Bilal — Master Cybersécurité &amp; Développeur Web">
     <meta property="og:description" content="Master 2 Cybersécurité à l'UPHF, à la recherche d'un stage de 20 semaines en cybersécurité dès mars 2027. Projets, CV interactif et contact.">
     <meta property="og:url" content="https://bilalmedj.com/">
-    <meta property="og:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
+    <meta property="og:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg?v=20260915">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="MEDJ Bilal — Master Cybersécurité et développeur web">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MEDJ Bilal — Master Cybersécurité &amp; Développeur Web">
     <meta name="twitter:description" content="Master 2 Cybersécurité à l'UPHF, à la recherche d'un stage de 20 semaines en cybersécurité dès mars 2027. Projets, CV interactif et contact.">
-    <meta name="twitter:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
+    <meta name="twitter:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg?v=20260915">
 
     <!-- ===== Performance : préconnexion &amp; préchargement ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,8 +45,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Site Main Style sheet css -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Site Main Style sheet css
+         /assets/* est servi en cache "immutable" (1 an) : changer ?v= à chaque modification
+         de style.css, main.js ou og-image.jpg, sinon les visiteurs déjà venus gardent l'ancienne version. -->
+    <link href="assets/css/style.css?v=20260915" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
     <!-- Efface les anciens cookies Google Analytics des visiteurs qui reviennent -->
@@ -2647,7 +2649,7 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/typed.js"></script>
     <!--Site Main js-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=20260915"></script>
 
     <!-- Formulaire de contact : envoi AJAX, validation et états de chargement -->
     <script>
