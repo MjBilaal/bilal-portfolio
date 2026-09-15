@@ -1,8 +1,7 @@
 User-agent: *
 Allow: /
 
-# Ressources internes inutiles à l'indexation
-Disallow: /assets/js/
+# Polices : inutiles à l'indexation (le JavaScript reste accessible pour le rendu des pages)
 Disallow: /assets/fonts/
 
 Sitemap: https://bilalmedj.com/sitemap.xml

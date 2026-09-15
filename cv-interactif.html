@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV interactif — MEDJ Bilal | Master 2 Cybersécurité</title>
-    <meta name="description" content="CV interactif de MEDJ Bilal, étudiant en Master 2 Cybersécurité à l'UPHF : expériences, compétences techniques, parcours et contact.">
+    <meta name="description" content="CV interactif de MEDJ Bilal, Master 2 Cybersécurité à l'UPHF, à la recherche d'un stage de 20 semaines en cybersécurité dès mars 2027.">
     <meta name="author" content="MEDJ Bilal">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://bilalmedj.com/cv-interactif.html">
@@ -18,7 +18,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="CV interactif — MEDJ Bilal | Master 2 Cybersécurité">
-    <meta property="og:description" content="Profil cybersécurité et développement : expériences, stack technique, parcours et contact direct.">
+    <meta property="og:description" content="Master 2 Cybersécurité à l'UPHF : stage de 20 semaines en cybersécurité recherché dès mars 2027. Expériences, compétences et parcours.">
     <meta property="og:type" content="profile">
     <meta property="og:locale" content="fr_FR">
     <meta property="og:url" content="https://bilalmedj.com/cv-interactif.html">
@@ -27,12 +27,14 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CV interactif — MEDJ Bilal">
-    <meta name="twitter:description" content="Master 2 Cybersécurité UPHF. Expériences, compétences techniques et parcours.">
+    <meta name="twitter:description" content="Master 2 Cybersécurité à l'UPHF : stage de 20 semaines en cybersécurité recherché dès mars 2027. Expériences, compétences et parcours.">
     <meta name="twitter:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
     <meta name="theme-color" content="#0b1220">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Efface les anciens cookies Google Analytics des visiteurs qui reviennent -->
+    <script src="assets/js/clear-ga-cookies.js" defer></script>
     <style>
         :root {
             --space-1: 8px;
@@ -634,6 +636,15 @@
             z-index: 1;
         }
 
+        .footer a {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .footer a:hover {
+            color: var(--accent);
+        }
+
         .reveal {
             opacity: 0;
             transform: translateY(16px);
@@ -737,6 +748,25 @@
         .project-card-cv .chip {
             font-size: .67rem;
             padding: 5px 9px;
+        }
+
+        .project-card-cv__link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 14px;
+            font-family: var(--font-code);
+            font-size: .74rem;
+            font-weight: 700;
+            /* --accent-strong : le bleu #2563eb plafonne à 4,5:1 sur la carte teintée en mode clair */
+            color: var(--accent-strong);
+            border-bottom: 1px solid transparent;
+            transition: border-color .2s ease;
+        }
+
+        .project-card-cv__link:hover,
+        .project-card-cv__link:focus-visible {
+            border-bottom-color: var(--accent-strong);
         }
 
         .boot-screen {
@@ -1094,7 +1124,7 @@
         </main>
 
         <footer class="footer">
-            Terminal session active | CV interactif de Bilal Medj
+            Terminal session active | CV interactif de Bilal Medj | <a href="confidentialite.html">Confidentialité</a>
         </footer>
     </div>
 
@@ -1120,26 +1150,35 @@
                     { name: "Français", level: "Langue maternelle" },
                     { name: "Anglais", level: "Niveau B2 — lecture technique courante" }
                 ],
+                // Mêmes projets, dans le même ordre, que la section Projets de l'accueil
                 projects: [
+                    {
+                        name: "Assistant RAG d'analyse de menaces",
+                        desc: "Questions-réponses sur MITRE ATT&amp;CK et les CVE du NVD avec un LLM exécuté en local (Mistral via Ollama). Recherche hybride exact-match, BM25 et FAISS : 0,85 de couverture contre 0,40 pour le LLM seul.",
+                        tags: ["Python", "FAISS", "BM25", "Ollama"],
+                        url: "https://github.com/MjBilaal/rag-cyber-mitre-nvd",
+                        linkLabel: "Code source"
+                    },
+                    {
+                        name: "Capteur radio chiffré sur Arduino",
+                        desc: "Mesures transmises en radio IEEE 802.15.4 avec intégrité CRC16, chiffrement AES-128 et changement de canal anti-brouillage. Analyse critique : IV fixe, CRC non authentifiant, pas d'anti-rejeu.",
+                        tags: ["C++", "Arduino", "AES-128", "802.15.4"],
+                        url: "https://github.com/MjBilaal/secure-radio-aes",
+                        linkLabel: "Code source"
+                    },
+                    {
+                        name: "Analyse forensique mémoire de WannaCry",
+                        desc: "Image mémoire Windows XP analysée avec Volatility 2 : processus malveillant, persistance dans le registre, traces SMBv1 d'EternalBlue, domaine kill-switch et règles YARA.",
+                        tags: ["Volatility", "YARA", "Docker", "Forensique"],
+                        url: "https://github.com/MjBilaal/mem-forensics-volatility",
+                        linkLabel: "Code source"
+                    },
                     {
                         name: "Forum d'entraide aux devoirs",
                         desc: "Plateforme communautaire avec authentification, gestion des rôles, catégories et modération. Protection contre les injections SQL et le XSS.",
-                        tags: ["PHP", "MySQL", "JavaScript", "OWASP"]
-                    },
-                    {
-                        name: "Boutique e-commerce",
-                        desc: "Site marchand complet : catalogue, panier persistant, tunnel de commande et back-office de gestion des stocks.",
-                        tags: ["PHP", "MySQL", "JavaScript", "CSS3"]
-                    },
-                    {
-                        name: "Comparateur de jeux vidéo",
-                        desc: "Application web interrogeant une API externe pour comparer des fiches de jeux, avec filtres et tri en temps réel.",
-                        tags: ["JavaScript", "API REST", "Bootstrap"]
-                    },
-                    {
-                        name: "Ce CV interactif",
-                        desc: "Page autonome : séquence de démarrage façon terminal, double thème cyber / clair et contenu généré en JavaScript.",
-                        tags: ["JavaScript", "CSS3", "Accessibilité"]
+                        tags: ["PHP", "MySQL", "JavaScript", "OWASP"],
+                        url: "https://github.com/MjBilaal",
+                        linkLabel: "Profil GitHub"
                     }
                 ],
                 experience: [
@@ -1269,6 +1308,9 @@
                             return '<span class="chip">' + tag + "</span>";
                         }).join(""),
                         "</div>",
+                        '<a class="project-card-cv__link" href="' + project.url + '" target="_blank" rel="noopener noreferrer" aria-label="' + project.linkLabel + " : " + project.name + ' (nouvel onglet)">',
+                        '<span aria-hidden="true">⌘</span> ' + project.linkLabel + " ↗",
+                        "</a>",
                         "</article>"
                     ].join("");
                 }).join("");

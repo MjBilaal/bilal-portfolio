@@ -8,7 +8,7 @@
 
     <!-- ===== SEO ===== -->
     <title>MEDJ Bilal — Master Cybersécurité &amp; Développeur Web | Portfolio</title>
-    <meta name="description" content="Portfolio de MEDJ Bilal, étudiant en Master 2 Cybersécurité à l'UPHF et développeur web full-stack à Douai. Projets, compétences techniques, CV interactif et contact.">
+    <meta name="description" content="Portfolio de MEDJ Bilal, Master 2 Cybersécurité à l'UPHF : je recherche un stage de 20 semaines en cybersécurité dès mars 2027. Projets, CV et contact.">
     <meta name="keywords" content="MEDJ Bilal, cybersécurité, développeur web, stage cybersécurité, stage informatique, Douai, UPHF, portfolio, full-stack, Linux, Java, Python">
     <meta name="author" content="MEDJ Bilal">
     <meta name="robots" content="index, follow, max-image-preview:large">
@@ -26,7 +26,7 @@
     <meta property="og:locale" content="fr_FR">
     <meta property="og:site_name" content="MEDJ Bilal — Portfolio">
     <meta property="og:title" content="MEDJ Bilal — Master Cybersécurité &amp; Développeur Web">
-    <meta property="og:description" content="Étudiant en Master 2 Cybersécurité à l'UPHF, développeur web full-stack. Découvrez mes projets, mon CV interactif et mes compétences.">
+    <meta property="og:description" content="Master 2 Cybersécurité à l'UPHF, à la recherche d'un stage de 20 semaines en cybersécurité dès mars 2027. Projets, CV interactif et contact.">
     <meta property="og:url" content="https://bilalmedj.com/">
     <meta property="og:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
     <meta property="og:image:width" content="1200">
@@ -34,7 +34,7 @@
     <meta property="og:image:alt" content="MEDJ Bilal — Master Cybersécurité et développeur web">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="MEDJ Bilal — Master Cybersécurité &amp; Développeur Web">
-    <meta name="twitter:description" content="Étudiant en Master 2 Cybersécurité à l'UPHF, développeur web full-stack. Projets, CV interactif et contact.">
+    <meta name="twitter:description" content="Master 2 Cybersécurité à l'UPHF, à la recherche d'un stage de 20 semaines en cybersécurité dès mars 2027. Projets, CV interactif et contact.">
     <meta name="twitter:image" content="https://bilalmedj.com/assets/img/meta/og-image.jpg">
 
     <!-- ===== Performance : préconnexion &amp; préchargement ===== -->
@@ -48,6 +48,9 @@
     <!-- Site Main Style sheet css -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- Efface les anciens cookies Google Analytics des visiteurs qui reviennent -->
+    <script src="assets/js/clear-ga-cookies.js" defer></script>
 
     <!-- ===== Données structurées (schema.org) ===== -->
     <script type="application/ld+json">
@@ -79,26 +82,6 @@
       ]
     }
     </script>
-
-    <!-- Google tag (gtag.js) — chargé après le rendu pour ne pas bloquer l'affichage -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XHYF9WP24S"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XHYF9WP24S');
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-W2TB8TFG');</script>
-    <!-- End Google Tag Manager -->
 
     <style>
         /* Styles spécifiques pour les boutons Cyber sans casser le reste */
@@ -212,6 +195,7 @@
         }
 
         body.light-mode {
+            --accent-text: #cf1437;
             background: #f7f9fc;
             color: #1a1a1a;
         }
@@ -256,7 +240,7 @@
 
         body.light-mode .services-icon i {
             background: #ffffff;
-            color: #ea1538;
+            color: #cf1437;
         }
 
         body.light-mode .single-counter h3,
@@ -305,7 +289,7 @@
 
         body.light-mode .navbar-b.navbar-trans .nav-link:hover,
         body.light-mode .navbar-b.navbar-reduce .nav-link:hover {
-            color: #ea1538;
+            color: #cf1437;
         }
 
         body.light-mode .navbar-toggler span {
@@ -320,7 +304,8 @@
         body.light-mode .home-area .home-content h1,
         body.light-mode .home-area .home-content p,
         body.light-mode .home-area .social a,
-        body.light-mode .home-area .social a.text {
+        body.light-mode .home-area .social a.text,
+        body.light-mode .home-area .social .text {
             color: #111111;
         }
 
@@ -402,8 +387,12 @@
             background: #f59e0b;
         }
 
+        /* Rouge d'accent : #cf1437 pour les fonds de boutons et le texte en mode clair (5,1:1),
+           #f43f5e pour les petits textes sur fond sombre (4,8:1). Une seule teinte ne peut pas
+           dépasser 4,5:1 à la fois sur fond sombre et sur fond clair. */
         :root {
-            --accent-primary: #ea1538;
+            --accent-text: #f43f5e;
+            --accent-primary: #cf1437;
             --accent-secondary: #ff6f61;
             --surface-glass: rgba(16, 19, 30, 0.72);
             --text-main: #eef2ff;
@@ -579,7 +568,7 @@
             transform: translateY(-2px);
         }
 
-        /* Le thème définit « a:hover, a:focus { color: #ea1538 } », plus spécifique
+        /* Le thème définit « a:hover, a:focus { color: rouge } », plus spécifique
            que « .button ». Résultat : texte rouge sur fond rouge, donc invisible,
            et le focus reste collé après un tap sur mobile. On force la couleur. */
         a.button,
@@ -619,8 +608,8 @@
             .button:hover,
             a.button:hover,
             a.button:focus {
-                background: #ea1538;
-                border-color: #ea1538;
+                background: #cf1437;
+                border-color: #cf1437;
                 color: #ffffff;
                 transform: none;
             }
@@ -981,6 +970,45 @@
             .navbar-b .nav-link {
                 display: inline-flex;
             }
+
+            /* Menu replié jusqu'à 991 px (navbar-expand-lg) : même espacement que sur mobile */
+            .navbar-b .navbar-nav {
+                margin-top: 15px;
+            }
+
+            .navbar-b .nav-item {
+                margin-bottom: 10px;
+            }
+
+            .navbar-b .nav-item:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        /* 992-1199 px : menu déplié mais conteneur de 960 px, on resserre pour tenir sur une ligne */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .navbar-b.navbar-trans .nav-item,
+            .navbar-b.navbar-reduce .nav-item {
+                padding-right: 2px;
+            }
+
+            .navbar-b .nav-link {
+                padding: 7px 9px !important;
+            }
+
+            .navbar-b.navbar-trans .nav-link,
+            .navbar-b.navbar-reduce .nav-link {
+                font-size: 14px;
+            }
+
+            .nav-cyber-link {
+                margin-left: 6px;
+                padding: 5px 10px !important;
+            }
+
+            .theme-toggle {
+                margin-left: 8px;
+            }
         }
 
         @media (max-width: 767px) {
@@ -1043,30 +1071,6 @@
             background-image: -webkit-image-set(url(assets/img/home-bg.webp) 1x);
             background-image: image-set(url(assets/img/home-bg.webp) type("image/webp"),
                     url(assets/img/home-bg.jpg) type("image/jpeg"));
-        }
-
-        /* --- Préchargeur : le thème s'appuie uniquement sur deux pseudo-éléments
-               de 50 % qui s'écartent. Sur mobile, 100vh vaut la hauteur SANS la barre
-               d'adresse, donc les rideaux ne couvraient pas tout l'écran et la page
-               apparaissait entre les deux. On donne un fond au conteneur et on
-               utilise 100dvh (hauteur réelle, barre d'adresse comprise). --- */
-
-        #preloader-wapper {
-            height: 100vh;
-            height: 100dvh;
-            min-height: -webkit-fill-available;
-            background: rgb(9, 7, 12);
-            transition: opacity 0.4s ease, visibility 0.4s ease;
-        }
-
-        #preloader-wapper.loaded {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        #preloader-wapper::before,
-        #preloader-wapper::after {
-            height: 51%;
         }
 
         /* --- Accessibilité : lien d'évitement & focus visible --- */
@@ -1375,6 +1379,42 @@
             display: block;
         }
 
+        /* Projets sans capture d'écran : en-tête façon terminal, même hauteur que les images */
+        .project-cover {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7px;
+            min-height: 220px;
+            margin: 0;
+            padding: 22px 24px;
+            list-style: none;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #c6d2e3;
+            background:
+                radial-gradient(420px 200px at 100% 0%, rgba(34, 197, 94, 0.14), transparent 70%),
+                #070b12;
+            border-bottom: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .project-cover li {
+            overflow-wrap: anywhere;
+        }
+
+        .project-cover__repo {
+            margin-bottom: 4px;
+            font-weight: 700;
+            color: #22c55e;
+        }
+
+        .project-cover__key {
+            display: inline-block;
+            min-width: 11ch;
+            color: #8b9bb4;
+        }
+
         .project-card .project-img-overlay .project-content h6 {
             font-size: 13px;
             letter-spacing: 0.08em;
@@ -1593,7 +1633,7 @@
         }
 
         .contact-area .form label span {
-            color: #ea1538;
+            color: var(--accent-text);
         }
 
         .form-honeypot {
@@ -1629,6 +1669,11 @@
         #form-submit[disabled] {
             opacity: 0.62;
             cursor: not-allowed;
+        }
+
+        /* Le modèle force "capitalize" : l'e-mail s'affichait "Bilal.Medj@Hotmail.Fr" */
+        .contact-details p {
+            text-transform: none;
         }
 
         .contact-details a {
@@ -1698,6 +1743,25 @@
 
         body.light-mode .footer-links a {
             color: #1a2433;
+        }
+
+        /* Lien discret vers la page Confidentialité (pied de page et note du formulaire) */
+        .copyright-area p a.copyright-link,
+        .form-note a {
+            color: inherit;
+            font-weight: 400;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .copyright-area p a.copyright-link:hover,
+        .form-note a:hover {
+            color: #22c55e;
+        }
+
+        body.light-mode .copyright-area p a.copyright-link:hover,
+        body.light-mode .form-note a:hover {
+            color: #0f6e3c;
         }
 
         .footer-brand,
@@ -1849,25 +1913,14 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2TB8TFG"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!-- Lien d'évitement (accessibilité clavier) -->
     <a class="skip-link" href="#main-content">Aller au contenu principal</a>
-
-    <!-- Preloader Start -->
-    <div id="preloader-wapper" aria-hidden="true">
-        <div class="loader-middle"></div>
-    </div>
-    <!-- Prealoader End -->
 
     <!-- Page Wrapper Section Start -->
     <div class="maslin-page-wrapper">
 
         <!-- Navbar Start -->
-        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav" aria-label="Navigation principale">
+        <nav class="navbar navbar-b navbar-trans navbar-expand-lg fixed-top" id="mainNav" aria-label="Navigation principale">
             <div class="container">
                 <a class="navbar-brand js-scroll" href="index.html">MEDJ Bilal</a>
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
@@ -2219,7 +2272,7 @@
             <div class="col-sm-12">
                 <div class="section-title">
                     <h2>Projets récents</h2>
-                    <p class="section-subtitle">Une sélection de réalisations académiques et personnelles. Cliquez sur une image pour l'agrandir.</p>
+                    <p class="section-subtitle">Une sélection de projets en cybersécurité et en développement web, académiques et personnels.</p>
                 </div>
             </div>
         </div>
@@ -2228,38 +2281,32 @@
                 <div class="project-list">
                     <ul class="nav" id="project-flters" role="tablist" aria-label="Filtrer les projets par catégorie">
                         <li class="filter filter-active" data-filter=".all" role="button" tabindex="0" aria-pressed="true">Tous</li>
+                        <li class="filter" data-filter=".cyber" role="button" tabindex="0" aria-pressed="false">Cybersécurité</li>
                         <li class="filter" data-filter=".web" role="button" tabindex="0" aria-pressed="false">Web</li>
-                        <li class="filter" data-filter=".fullstack" role="button" tabindex="0" aria-pressed="false">Full-stack</li>
-                        <li class="filter" data-filter=".front" role="button" tabindex="0" aria-pressed="false">Front-end</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="project-container">
 
-            <!-- project-item 1 -->
-            <article class="col-lg-6 col-md-6 project-grid-item all web fullstack">
+            <!-- Projet 1 : RAG d'analyse de menaces -->
+            <article class="col-lg-6 col-md-6 project-grid-item all cyber">
                 <div class="project-card">
-                    <a class="popup-img project-item" href="assets/img/projects/work-1.jpg" aria-label="Agrandir la capture du projet e-commerce">
-                        <picture>
-                            <source srcset="assets/img/projects/work-1.webp" type="image/webp">
-                            <img src="assets/img/projects/work-1.jpg" width="1100" height="544" loading="lazy" decoding="async"
-                                 alt="Capture d'écran de la boutique en ligne : catalogue produits et panier">
-                        </picture>
-                        <div class="project-img-overlay">
-                            <div class="project-content">
-                                <h6>Agrandir l'aperçu</h6>
-                            </div>
-                        </div>
-                    </a>
+                    <ul class="project-cover" aria-label="Aperçu technique : rag-cyber-mitre-nvd">
+                        <li class="project-cover__repo"># rag-cyber-mitre-nvd</li>
+                        <li><span class="project-cover__key">sources</span> MITRE ATT&amp;CK, NVD</li>
+                        <li><span class="project-cover__key">recherche</span> exact-match + BM25 + FAISS</li>
+                        <li><span class="project-cover__key">LLM</span> Mistral en local (Ollama)</li>
+                        <li><span class="project-cover__key">évaluation</span> RAG 0,85 / LLM seul 0,40</li>
+                    </ul>
                     <div class="project-card__body">
-                        <h3 class="project-card__title">Boutique e-commerce</h3>
-                        <p class="project-card__desc">Site marchand complet : catalogue produits, fiches détaillées, panier persistant et tunnel de commande. Gestion des stocks et des commandes côté back-office, avec un espace client sécurisé.</p>
+                        <h3 class="project-card__title">Assistant RAG d'analyse de menaces</h3>
+                        <p class="project-card__desc">Assistant de questions-réponses sur les techniques MITRE ATT&amp;CK et les CVE du NVD, avec un LLM exécuté en local. Recherche hybride (correspondance exacte, BM25, FAISS) et évaluation sur 20 questions&nbsp;: 0,85 de couverture contre 0,40 pour le LLM seul.</p>
                         <ul class="project-card__tags" aria-label="Technologies utilisées">
-                            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>MySQL</li>
+                            <li>Python</li><li>FAISS</li><li>BM25</li><li>Ollama</li><li>Streamlit</li>
                         </ul>
                         <div class="project-card__links">
-                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <a href="https://github.com/MjBilaal/rag-cyber-mitre-nvd" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Code source : Assistant RAG d'analyse de menaces (nouvel onglet)">
                                 <i class="fa fa-github" aria-hidden="true"></i> Code source
                             </a>
                         </div>
@@ -2267,29 +2314,24 @@
                 </div>
             </article>
 
-            <!-- project-item 2 -->
-            <article class="col-lg-6 col-md-6 project-grid-item all web front">
+            <!-- Projet 2 : capteur radio chiffré -->
+            <article class="col-lg-6 col-md-6 project-grid-item all cyber">
                 <div class="project-card">
-                    <a class="popup-img project-item" href="assets/img/projects/work-2.jpg" aria-label="Agrandir la capture du comparateur de jeux vidéo">
-                        <picture>
-                            <source srcset="assets/img/projects/work-2.webp" type="image/webp">
-                            <img src="assets/img/projects/work-2.jpg" width="1100" height="597" loading="lazy" decoding="async"
-                                 alt="Capture d'écran du comparateur de jeux vidéo affichant deux fiches côte à côte">
-                        </picture>
-                        <div class="project-img-overlay">
-                            <div class="project-content">
-                                <h6>Agrandir l'aperçu</h6>
-                            </div>
-                        </div>
-                    </a>
+                    <ul class="project-cover" aria-label="Aperçu technique : secure-radio-aes">
+                        <li class="project-cover__repo"># secure-radio-aes</li>
+                        <li><span class="project-cover__key">carte</span> Arduino Due + DHT22</li>
+                        <li><span class="project-cover__key">radio</span> IEEE 802.15.4 (MRF24J40)</li>
+                        <li><span class="project-cover__key">trame</span> CRC16 puis AES-128</li>
+                        <li><span class="project-cover__key">brouillage</span> canaux 14 → 17 → 18 → 19 → 20</li>
+                    </ul>
                     <div class="project-card__body">
-                        <h3 class="project-card__title">Comparateur de jeux vidéo</h3>
-                        <p class="project-card__desc">Application web permettant de rechercher des jeux et de comparer leurs caractéristiques côte à côte (note, genre, plateforme, prix). Interface dynamique alimentée par une API externe, avec filtres et tri en temps réel.</p>
+                        <h3 class="project-card__title">Capteur radio chiffré sur Arduino</h3>
+                        <p class="project-card__desc">Capteur de température et d'humidité qui transmet ses mesures en radio IEEE 802.15.4, avec intégrité CRC16, chiffrement AES-128 et changement de canal en cas de brouillage. Analyse critique des limites&nbsp;: IV fixe, CRC non authentifiant, absence d'anti-rejeu.</p>
                         <ul class="project-card__tags" aria-label="Technologies utilisées">
-                            <li>JavaScript</li><li>API REST</li><li>Bootstrap</li><li>CSS3</li>
+                            <li>C++</li><li>Arduino</li><li>AES-128</li><li>IEEE 802.15.4</li><li>IoT</li>
                         </ul>
                         <div class="project-card__links">
-                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <a href="https://github.com/MjBilaal/secure-radio-aes" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Code source : Capteur radio chiffré sur Arduino (nouvel onglet)">
                                 <i class="fa fa-github" aria-hidden="true"></i> Code source
                             </a>
                         </div>
@@ -2297,8 +2339,33 @@
                 </div>
             </article>
 
-            <!-- project-item 3 -->
-            <article class="col-lg-6 col-md-6 project-grid-item all web fullstack">
+            <!-- Projet 3 : forensique mémoire -->
+            <article class="col-lg-6 col-md-6 project-grid-item all cyber">
+                <div class="project-card">
+                    <ul class="project-cover" aria-label="Aperçu technique : mem-forensics-volatility">
+                        <li class="project-cover__repo"># mem-forensics-volatility</li>
+                        <li><span class="project-cover__key">image</span> Windows XP SP3, WannaCry</li>
+                        <li><span class="project-cover__key">pslist</span> tasksche.exe → @WanaDecryptor@</li>
+                        <li><span class="project-cover__key">registre</span> persistance dans la clé Run</li>
+                        <li><span class="project-cover__key">réseau</span> 44 en-têtes SMBv1 (EternalBlue)</li>
+                    </ul>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Analyse forensique mémoire de WannaCry</h3>
+                        <p class="project-card__desc">Investigation d'une image mémoire Windows XP infectée avec Volatility&nbsp;2&nbsp;: processus malveillant, persistance dans le registre, traces SMBv1 d'EternalBlue, domaine kill-switch et règles YARA de détection, dans un conteneur Docker en lecture seule.</p>
+                        <ul class="project-card__tags" aria-label="Technologies utilisées">
+                            <li>Volatility</li><li>YARA</li><li>Docker</li><li>Forensique</li><li>Windows</li>
+                        </ul>
+                        <div class="project-card__links">
+                            <a href="https://github.com/MjBilaal/mem-forensics-volatility" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Code source : Analyse forensique mémoire de WannaCry (nouvel onglet)">
+                                <i class="fa fa-github" aria-hidden="true"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projet 4 : développement web sécurisé (pas de dépôt dédié) -->
+            <article class="col-lg-6 col-md-6 project-grid-item all web">
                 <div class="project-card">
                     <a class="popup-img project-item" href="assets/img/projects/work-3.jpg" aria-label="Agrandir la capture du forum d'entraide aux devoirs">
                         <picture>
@@ -2319,38 +2386,8 @@
                             <li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Sécurité OWASP</li>
                         </ul>
                         <div class="project-card__links">
-                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <i class="fa fa-github" aria-hidden="true"></i> Code source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- project-item 4 -->
-            <article class="col-lg-6 col-md-6 project-grid-item all web front">
-                <div class="project-card">
-                    <a class="popup-img project-item" href="assets/img/projects/work-4.jpg" aria-label="Agrandir la capture du site de restaurant">
-                        <picture>
-                            <source srcset="assets/img/projects/work-4.webp" type="image/webp">
-                            <img src="assets/img/projects/work-4.jpg" width="1100" height="529" loading="lazy" decoding="async"
-                                 alt="Capture d'écran du site vitrine de restaurant présentant la carte et la réservation">
-                        </picture>
-                        <div class="project-img-overlay">
-                            <div class="project-content">
-                                <h6>Agrandir l'aperçu</h6>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="project-card__body">
-                        <h3 class="project-card__title">Site vitrine de restaurant</h3>
-                        <p class="project-card__desc">Site vitrine responsive présentant la carte, les horaires et la localisation de l'établissement, avec un formulaire de réservation en ligne. Design mobile-first et optimisation du référencement local.</p>
-                        <ul class="project-card__tags" aria-label="Technologies utilisées">
-                            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive</li><li>SEO</li>
-                        </ul>
-                        <div class="project-card__links">
-                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <i class="fa fa-github" aria-hidden="true"></i> Code source
+                            <a href="https://github.com/MjBilaal" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Profil GitHub de Bilal MEDJ (nouvel onglet)">
+                                <i class="fa fa-github" aria-hidden="true"></i> Profil GitHub
                             </a>
                         </div>
                     </div>
@@ -2535,7 +2572,7 @@
 
                                     <div class="col-md-12">
                                         <button type="submit" class="button" id="form-submit"><span>Envoyer le message</span></button>
-                                        <p class="form-note">Vos coordonnées ne servent qu'à vous répondre et ne sont jamais transmises à des tiers.</p>
+                                        <p class="form-note">Vos coordonnées servent uniquement à vous répondre et transitent par le service Formspree. <a href="confidentialite.html">Confidentialité</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -2592,7 +2629,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <p>&copy; <span id="footer-year">2026</span> MEDJ Bilal — Tous droits réservés.</p>
+                            <p>&copy; <span id="footer-year">2026</span> MEDJ Bilal — Tous droits réservés. · <a class="copyright-link" href="confidentialite.html">Confidentialité</a></p>
                         </div>
                     </div>
                 </div>
